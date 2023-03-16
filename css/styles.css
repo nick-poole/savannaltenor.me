@@ -1,66 +1,83 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 /*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+  --nav-width: 324px;
 
-  
   /*===== Font weight =====*/
-  
-  /*===== Colors =====*/
-  
-  /*===== Font and typography =====*/
-  
-  /*===== Margenes =====*/
-  
-  /*===== z index =====*/
-  
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
 
+  /*===== Colors =====*/
+  --first-color: #ccd5a3;
+  --first-color-dark: #d4a373;
+  --first-color-darker: #5c573e;
+  --text-color: #397367;
+  --first-color-light: #d5ffef;
+  --first-color-lighter: #faedcd;
+
+  /*===== Font and typography =====*/
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --small-font-size: 0.75rem;
+
+  /*===== Margins =====*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+
+  /*===== z index =====*/
+  --z-fixed: 100;
+}
+@media screen and(min-width: 768px) {
+  :root {
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --small-font-size: 0.813rem;
+  }
+}
 
 /*===== BASE =====*/
 
-
 /*===== CLASS CSS ===== */
-
 
 /*===== LAYOUT =====*/
 
-
 /*===== NAV =====*/
-
 
 /*=== Show menu ===*/
 
-
 /*Active menu*/
-
 
 /*===== HOME =====*/
 
-
 /*BUTTONS*/
-
 
 /* ===== ABOUT =====*/
 
-
 /* ===== SKILLS =====*/
-
 
 /* ===== EDUCATION =====*/
 
-
 /* ===== SERVICES =====*/
-
 
 /* ===== PROJECT IN MIND  =====*/
 
-
 /* ===== WORKS =====*/
-
 
 /* ===== CONTACT =====*/
 
-
 /* ===== FOOTER =====*/
-
 
 /* ===== MEDIA QUERIES=====*/
