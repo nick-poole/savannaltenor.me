@@ -84,7 +84,7 @@ h3 {
 ul {
   margin: 0;
   padding: 0;
-  list-style-type: style none;
+  list-style-type: none;
 }
 
 a {
@@ -113,7 +113,7 @@ img {
 .section-subtitle {
   display: block;
   font-size: var(--first-font-size);
-  color: var(--first-color-darken);
+  color: var(--first-color-darker);
   text-align: center;
   font-weight: var(--font-bold);
   margin-bottom: 0.25rem;
@@ -183,9 +183,19 @@ img {
 .nav__link {
   font-size: 1rem;
   text-transform: uppercase;
-  color: var(--first-color-lighten);
+  color: var(--first-color-lighter);
   font-weight: var(--font-bold);
   transition: 0.3s;
+}
+
+.nav__link:hover {
+  color: var(--text-color);
+}
+
+.nav__toggle {
+  color: var(--first-color-dark);
+  font-size: 1.3rem;
+  cursor: pointer;
 }
 
 /*=== Show menu ===*/
