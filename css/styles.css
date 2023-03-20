@@ -25,7 +25,7 @@
   --h3-font-size: 1rem;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
-  --small-font-size: 0.75rem;
+  --smaller-font-size: 0.75rem;
 
   /*===== Margins =====*/
   --mb-1: 0.5rem;
@@ -205,7 +205,9 @@ img {
 
 /*===== HOME =====*/
 .home__container {
-  height: calc(100vh - var(--header-height));
+  /* height: calc(100vh - var(--header-height)); suggested - leaves large gap*/
+
+  height: fit-content; //likely setting or find alternative
   align-items: center;
 }
 
@@ -289,7 +291,64 @@ img {
 .button__light:hover {
   color: var(--first-color-lighter);
 }
+
 /* ===== ABOUT =====*/
+.about__container {
+  row-gap: 2rem;
+}
+
+.about__data {
+  text-align: center;
+}
+
+.about__description {
+  margin-bottom: var(--mb-4);
+}
+.about__img {
+  width: 150px;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+}
+
+.about__information {
+  margin-bottom: var(--mb-4);
+}
+
+.about__information-title {
+  font-size: var(--h3-font-size);
+  color: var(--first-color-dark);
+  margin-bottom: var(--mb-2);
+}
+
+.about__information-data {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  padding-left: 2rem; //suggested 1.5
+  margin-bottom: var(--mb-3);
+  justify-content: center;
+
+  border: 1px dashed teal;
+}
+
+.about__information-icon {
+  font-size: 1.5rem;
+  color: var(--first-color);
+  /* margin-bottom: var(--mb-4); suggested but causes misalignment */
+
+  padding-right: 2rem;
+
+  border: 1px solid black;
+}
+
+.about__information-subtitle {
+  display: block;
+  font-weight: var(--font-semi-bold);
+}
+
+.about__information-subtitle-small {
+  font-size: var(--small-font-size);
+}
 
 /* ===== SKILLS =====*/
 
