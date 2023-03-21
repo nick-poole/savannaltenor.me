@@ -138,8 +138,6 @@ img {
   z-index: var(--z-fixed);
   background-color: var(--first-color-lighter);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-  border: 4px solid red;
 }
 
 /*===== NAV =====*/
@@ -531,7 +529,7 @@ height: 160px; */
 /* ===== PROJECT IN MIND  =====*/
 .resources {
   background-color: var(--first-color);
-  padding-bottom: 0;
+  padding-bottom: 2rem;
 }
 
 .resources__container {
@@ -562,8 +560,50 @@ height: 160px; */
   border-radius: 0.5rem;
 }
 
-/* ===== WORKS =====*/
+/* ===== LINKS =====*/
+.links__container {
+  justify-items: center;
+  row-gap: 2rem;
+}
 
+.links__img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.links__data {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(212, 163, 115, 0.9);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.links__link {
+  display: inline-flex;
+  font-size: 1.5rem;
+  background-color: var(--first-color-lighter);
+  color: var(--first-color);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-bottom: var(--mb-2);
+}
+
+.links__title {
+  font-size: var(--h2-font-size);
+  color: var(--first-color-lighter);
+}
+
+.links__img:hover .links__data {
+  bottom: 0;
+}
 /* ===== CONTACT =====*/
 
 /* ===== FOOTER =====*/

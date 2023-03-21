@@ -34,27 +34,29 @@
 
 3/19/23
 
-- Create and style Home section
+- CREATE and STYLE Home section
 
 3/20/23
 
-- Create and style About section.
+- CREATE and STYLE About section.
 
-- Create and style Skills section.
+- CREATE and STYLE Skills section.
 
-- Create and style Education section.
+- CREATE and STYLE Education section.
 
 3/21/23
 
-- Create and style Services section.
+- CREATE and STYLE Services section.
 
-- Create and style Resources section.
+- CREATE and STYLE Resources section.
 
 - INSERT images/988images/
 
 - INSERT images/howareyoureally-unsplash.jpg
 
 - INSERT icons/
+
+- CREATE and STYLE Links section.
 
 ### Action Items
 
@@ -69,3 +71,5 @@
 - Integrate ScrollTo() at bottom of page.
 
 - Set alt tags for images and links
+
+- Resize links logos.
