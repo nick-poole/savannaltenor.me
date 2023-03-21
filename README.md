@@ -44,6 +44,10 @@
 
 - Create and style Education section.
 
+3/21/23
+
+- Create and style Services section.
+
 ### Revisit Items
 
 - Consider alternative color scheme.
@@ -51,3 +55,5 @@
 - Integrate javascript action for nav menu tray.
 
 - FIX - education__rounder/line offset - css line 464.
+
+- Finalize and condense services items and descriptions && integrate drop downs w/Javascript
