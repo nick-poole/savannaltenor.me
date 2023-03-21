@@ -529,6 +529,38 @@ height: 160px; */
 }
 
 /* ===== PROJECT IN MIND  =====*/
+.resources {
+  background-color: var(--first-color);
+  padding-bottom: 0;
+}
+
+.resources__container {
+  row-gap: 2rem;
+}
+
+.resources__data {
+  text-align: center;
+}
+
+.resources__title,
+.resources__description {
+  color: var(--first-color-lighter);
+}
+
+.resources__description {
+  margin-bottom: var(--mb-4);
+}
+
+/* Inserted to space mb */
+.resources__button {
+  margin-bottom: var(--mb-4);
+}
+
+/* suggested width: 220px; */
+.resources__img {
+  justify-self: center;
+  border-radius: 0.5rem;
+}
 
 /* ===== WORKS =====*/
 
@@ -536,4 +568,4 @@ height: 160px; */
 
 /* ===== FOOTER =====*/
 
-/* ===== MEDIA QUERIES=====*/ ;
+/* ===== MEDIA QUERIES=====*/

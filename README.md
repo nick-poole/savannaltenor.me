@@ -48,7 +48,15 @@
 
 - Create and style Services section.
 
-### Revisit Items
+- Create and style Resources section.
+
+- INSERT images/988images/
+
+- INSERT images/howareyoureally-unsplash.jpg
+
+- INSERT icons/
+
+### Action Items
 
 - Consider alternative color scheme.
 
@@ -57,3 +65,7 @@
 - FIX - education__rounder/line offset - css line 464.
 
 - Finalize and condense services items and descriptions && integrate drop downs w/Javascript
+
+- Integrate ScrollTo() at bottom of page.
+
+- Set alt tags for images and links
