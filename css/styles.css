@@ -11,12 +11,12 @@
   --font-bold: 700;
 
   /*===== Colors =====*/
-  --first-color: #ccd5a3;
-  --first-color-dark: #d4a373;
-  --first-color-darker: #5c573e;
-  --text-color: #397367;
-  --first-color-light: #d5ffef;
-  --first-color-lighter: #faedcd;
+  --first-color: #602f3d;
+  --first-color-dark: #c58544;
+  --first-color-darker: #83746f;
+  --text-color: #432329;
+  --first-color-light: #e7c8a0;
+  --first-color-lighter: #fefae0;
 
   /*===== Font and typography =====*/
   --body-font: "Poppins", sans-serif;
@@ -651,5 +651,43 @@ height: 160px; */
 }
 
 /* ===== FOOTER =====*/
+.footer {
+  background-color: var(--first-color-darker);
+  color: var(--first-color-lighter);
+  text-align: center;
+}
+
+.footer__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-2);
+}
+
+.footer__description {
+  margin-bottom: var(--mb-2);
+}
+
+.footer__social {
+  margin-bottom: 3rem;
+}
+
+.footer__link {
+  display: inline-flex;
+  background-color: var(--first-color);
+  color: var(--first-color-lighter);
+  font-size: 1.1rem;
+  border-radius: 50%;
+  padding: 0.4rem;
+  margin: 0 var(--mb-1);
+  transition: 0.3s;
+}
+
+.footer__link:hover {
+  background-color: var(--first-color-lighter);
+  color: var(--first-color);
+}
+
+.footer__copy {
+  font-size: var(--smaller-font-size);
+}
 
 /* ===== MEDIA QUERIES=====*/
