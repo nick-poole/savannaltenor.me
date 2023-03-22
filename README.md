@@ -11,12 +11,22 @@
 
 ### Color Palette
 
+First pallete
+
   --first-color: #CCD5A3;
   --first-color-dark: #D4A373;
   --first-color-darker: #5C573E;
   --text-color: #397367;
   --first-color-light: #D5FFEF;
   --first-color-lighter: #FAEDCD;
+
+Second pallete
+  --first-color: #602f3d;
+  --first-color-dark: #c58544;
+  --first-color-darker: #83746f;
+  --text-color: #432329;
+  --first-color-light: #e7c8a0;
+  --first-color-lighter: #fefae0;
 
 ### Commit Log
 
@@ -60,18 +70,24 @@
 
 - CREATE and STYLE Contact section.
 
+3/22/23
+
+- Update color pallete
+
+- Integrate mainjs action for nav menu tray
+
 ### Action Items
 
 - Consider alternative color scheme.
 
-- Integrate javascript action for nav menu tray.
+- ~~Integrate javascript action for nav menu tray.~~
 
 - FIX - education__rounder/line offset - css line 464.
 
 - Finalize and condense services items and descriptions && integrate drop downs w/Javascript
 
-- Integrate ScrollTo() at bottom of page.
-
 - Set alt tags for images and links
 
 - Resize links logos.
+
+- Update rgba for resource links
