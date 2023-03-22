@@ -91,3 +91,5 @@ Second pallete
 - Resize links logos.
 
 - Update rgba for resource links
+
+- Change Area of expertise with Core Competencies
