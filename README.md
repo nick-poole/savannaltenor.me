@@ -58,6 +58,8 @@
 
 - CREATE and STYLE Links section.
 
+- CREATE and STYLE Contact section.
+
 ### Action Items
 
 - Consider alternative color scheme.
