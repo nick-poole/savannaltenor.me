@@ -76,6 +76,8 @@ Second pallete
 
 - Integrate mainjs action for nav menu tray
 
+- Configure media query for screen > 768px
+
 ### Action Items
 
 - Consider alternative color scheme.
@@ -93,3 +95,5 @@ Second pallete
 - Update rgba for resource links
 
 - Change Area of expertise with Core Competencies
+
+- Resize Links header

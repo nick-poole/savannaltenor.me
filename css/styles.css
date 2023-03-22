@@ -785,3 +785,42 @@ height: 160px; */
     border-radius: 0.5rem;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 0;
+    padding-left: var(--nav-width);
+  }
+
+  .header {
+    width: 0;
+  }
+
+  .nav__toggle,
+  .nav__logo,
+  .nav__close {
+    display: none;
+  }
+
+  .nav__menu {
+    left: 0;
+  }
+
+  .home__container {
+    height: 100vh - 1rem;
+    margin-top: 3rem;
+  }
+
+  .section {
+    padding: 3rem 0 2rem;
+  }
+
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .services__container .links__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
