@@ -32,6 +32,8 @@ First pallete
 
 3/23/23
 
+-
+
 - Reformat README.md commit log to bottom-up approach. 
 
 3/22/23

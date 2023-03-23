@@ -358,111 +358,74 @@ height: 160px; */
   font-size: var(--small-font-size);
 }
 
-/* ===== SKILLS =====*/
-.skills__container {
+/* ===== EXPERIENCE & EDUCATION =====*/
+/* .experience__container {
   row-gap: 2rem;
   display: grid;
 }
 
-.skills__subtitle {
+.experience__subtitle {
   font-size: var(--h3-font-size);
   color: var(--first-color-dark);
   margin-bottom: var(--mb-2);
 }
 
-.skills__data {
+.experience__data {
   position: relative;
   display: flex;
   justify-content: space-between;
   margin: 0 var(--mb-2);
   margin: var(--mb-4);
-}
+} */
 
-.skills__name {
-  text-transform: uppercase;
-}
+/* ===== EXPierence =====*/
 
-.skills__bar {
-  position: absolute;
-  bottom: -0.75rem;
-  height: 0.25rem;
-  background-color: var(--first-color);
-}
-
-.skills__html {
-  width: 80%;
-}
-.skills__js {
-  width: 90%;
-}
-
-.skills__react {
-  width: 70%;
-}
-
-.skills__angular {
-  width: 60%;
-}
-
-.skills__php {
-  width: 80%;
-}
-
-.skills__nodejs {
-  width: 70%;
-}
-
-.skills__firebase {
-  width: 90%;
-}
-
-.skills__python {
-  width: 60%;
-}
-
-/* ===== EDUCATION =====*/
-.education_container {
+.exp__container {
   row-gap: 2rem;
 }
 
-.education__content {
+.exp__content {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   margin-bottom: 2rem;
 }
 
-.education__year,
-.education__race {
+.exp__year,
+.exp__position,
+.exp__race {
   font-size: var(--h3-font-size);
   margin-bottom: 0.25rem;
 }
 
-.education__university,
-.education__specialty {
+.exp__description,
+.exp__university,
+.exp__organization,
+.exp__specialty {
   display: block;
   font-size: var(--smaller-font-size);
 }
 
-.education__year,
-.education__university {
+.exp__year,
+.exp__organization,
+.exp__university {
   text-align: right;
 }
 
-.education__time {
+.exp__time {
   padding: 0 1rem;
   justify-self: center;
 }
 
-.education__rounder {
+.exp__rounder {
   position: relative;
   display: inline-block;
   width: 12px;
   height: 12px;
-  background-color: var(--first-color);
+  background-color: var(--first-color-dark);
   border-radius: 50%;
 }
 
-.education__rounder::before {
+.exp__rounder::before {
   content: "";
   position: absolute;
   transform: translate(-4px, -4px);
@@ -472,7 +435,7 @@ height: 160px; */
   border-radius: 50%;
 }
 
-.education__line {
+.exp__line {
   display: block;
   height: 90%;
   width: 2px;
