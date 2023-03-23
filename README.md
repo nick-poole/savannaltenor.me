@@ -11,6 +11,14 @@
 
 ### Color Palette
 
+Second pallete
+  --first-color: #602f3d;
+  --first-color-dark: #c58544;
+  --first-color-darker: #83746f;
+  --text-color: #432329;
+  --first-color-light: #e7c8a0;
+  --first-color-lighter: #fefae0;
+
 First pallete
 
   --first-color: #CCD5A3;
@@ -20,65 +28,65 @@ First pallete
   --first-color-light: #D5FFEF;
   --first-color-lighter: #FAEDCD;
 
-Second pallete
-  --first-color: #602f3d;
-  --first-color-dark: #c58544;
-  --first-color-darker: #83746f;
-  --text-color: #432329;
-  --first-color-light: #e7c8a0;
-  --first-color-lighter: #fefae0;
-
 ### Commit Log
 
-3/16/23
+3/23/23
 
-- Init Commit
+- Reformat README.md commit log to bottom-up approach. 
 
-- Link stylescss + main.js + boxicons CDN && Generate css  variables, media query for screen to 768px
+3/22/23
 
-- Set Base CSS + Reset CSS
+Site live @ <https://savannaltenor.me>
 
-- Integrate Header + Nav Menu
+- Create and Style favicon && change download to contact scrollTo.
 
-- Stow Header tray to offset position
+- Configure media query for screen > 1024px
+
+- Configure media query for screen > 768px
+
+- Integrate mainjs action for nav menu tray
+
+- Update color pallete
+
+3/21/23
+
+- CREATE and STYLE Contact section.
+
+- CREATE and STYLE Links section.
+
+- INSERT icons/
+
+- INSERT images/howareyoureally-unsplash.jpg
+
+- INSERT images/988images/
+
+- CREATE and STYLE Resources section.
+
+- CREATE and STYLE Services section.
+
+3/20/23
+
+- CREATE and STYLE Education section.
+
+- CREATE and STYLE Skills section.
+
+- CREATE and STYLE About section.
 
 3/19/23
 
 - CREATE and STYLE Home section
 
-3/20/23
+3/16/23
 
-- CREATE and STYLE About section.
+- Stow Header tray to offset position
 
-- CREATE and STYLE Skills section.
+- Integrate Header + Nav Menu
 
-- CREATE and STYLE Education section.
+- Link stylescss + main.js + boxicons CDN && Generate css  variables, media query for screen to 768px
 
-3/21/23
+- Set Base CSS + Reset CSS
 
-- CREATE and STYLE Services section.
-
-- CREATE and STYLE Resources section.
-
-- INSERT images/988images/
-
-- INSERT images/howareyoureally-unsplash.jpg
-
-- INSERT icons/
-
-- CREATE and STYLE Links section.
-
-- CREATE and STYLE Contact section.
-
-3/22/23
-
-- Update color pallete
-
-- Integrate mainjs action for nav menu tray
-
-- Configure media query for screen > 768px
-
-- Configure media query for screen > 768px
+- Init Commit
 
 ### Action Items
 
