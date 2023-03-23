@@ -78,6 +78,8 @@ Second pallete
 
 - Configure media query for screen > 768px
 
+- Configure media query for screen > 768px
+
 ### Action Items
 
 - Consider alternative color scheme.
