@@ -32,7 +32,7 @@ First pallete
 
 3/23/23
 
--
+- Eliminate Skills section and replace with Experience
 
 - Reformat README.md commit log to bottom-up approach. 
 
@@ -109,3 +109,9 @@ Site live @ <https://savannaltenor.me>
 - Change Area of expertise with Core Competencies
 
 - Resize Links header
+
+- Add link for Maryland 211
+
+- Style links for hover effect. [styles.css line 95]
+
+- Activate phone and email links

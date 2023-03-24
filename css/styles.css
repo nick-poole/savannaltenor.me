@@ -20,8 +20,8 @@
 
   /*===== Font and typography =====*/
   --body-font: "Poppins", sans-serif;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
+  --h1-font-size: 3rem;
+  --h2-font-size: 2rem;
   --h3-font-size: 1rem;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
@@ -89,8 +89,14 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--first-color-darker);
 }
+
+/* a:hover {
+  text-decoration: overline;
+  color: var(--first-color-dark);
+  transition: 0.5s;
+} */
 
 img {
   max-width: 100%;
@@ -112,7 +118,7 @@ img {
 
 .section-subtitle {
   display: block;
-  font-size: var(--small-font-size);
+  font-size: var(--h3-font-size);
   color: var(--first-color-darker);
   text-align: center;
   font-weight: var(--font-bold);
@@ -277,7 +283,7 @@ height: 160px; */
   width: 70%;
 }
 
-/*BUTTONS*/
+/*===== BUTTONS =====*/
 .button {
   display: inline-block;
   background-color: var(--first-color);
@@ -359,27 +365,10 @@ height: 160px; */
 }
 
 /* ===== EXPERIENCE & EDUCATION =====*/
-/* .experience__container {
-  row-gap: 2rem;
-  display: grid;
-}
-
-.experience__subtitle {
-  font-size: var(--h3-font-size);
-  color: var(--first-color-dark);
-  margin-bottom: var(--mb-2);
-}
-
-.experience__data {
-  position: relative;
+.experience {
   display: flex;
-  justify-content: space-between;
-  margin: 0 var(--mb-2);
-  margin: var(--mb-4);
-} */
-
-/* ===== EXPierence =====*/
-
+  flex-direction: column;
+}
 .exp__container {
   row-gap: 2rem;
 }
@@ -566,7 +555,8 @@ height: 160px; */
 
 .links__title {
   font-size: var(--h2-font-size);
-  color: var(--first-color-lighter);
+  color: var(--first-color-darker);
+  margin-bottom: 3rem;
 }
 
 .links__img:hover .links__data {
@@ -669,7 +659,7 @@ height: 160px; */
   }
 
   .about__container,
-  .skills__container,
+  .experience__container,
   .services__container,
   .links__container,
   .contact__container,
@@ -693,7 +683,7 @@ height: 160px; */
     padding-left: 4rem;
   }
 
-  .education__time {
+  .experience__time {
     padding: 0 2rem;
   }
 
@@ -783,7 +773,14 @@ height: 160px; */
     margin-right: auto;
   }
 
-  .services__container .links__container {
+  .experience {
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .services__container,
+  .links__container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
