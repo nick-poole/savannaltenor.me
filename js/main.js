@@ -46,3 +46,11 @@ function scrollActive() {
     }
   });
 }
+
+const servicesContent = document.getElementsByClassName("services__content");
+
+for (i = 0; i < servicesContent.length; i++) {
+  servicesContent[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+  });
+}

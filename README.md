@@ -30,6 +30,14 @@ First pallete
 
 ### Commit Log
 
+3/26/23
+
+- Git Branch --> Accordion
+
+3/24/23
+
+- NO COMMIT integrating accordion menu for .services__content items.
+
 3/23/23
 
 - Eliminate Skills section and replace with Experience
@@ -108,10 +116,12 @@ Site live @ <https://savannaltenor.me>
 
 - Change Area of expertise with Core Competencies
 
-- Resize Links header
+- Resize Links header, add links
 
 - Add link for Maryland 211
 
 - Style links for hover effect. [styles.css line 95]
 
 - Activate phone and email links
+
+- Connect Contact form with backend (email.js)
