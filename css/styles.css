@@ -89,14 +89,21 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--first-color-darker);
+  color: var(--first-color-dark);
 }
 
-/* a:hover {
-  text-decoration: overline;
-  color: var(--first-color-dark);
+a:hover {
+  color: var(--first-color-darker);
   transition: 0.5s;
-} */
+}
+
+.exp__link {
+  color: var(--first-color-dark);
+}
+
+.exp__link:hover {
+  color: var(--first-color-darker);
+}
 
 img {
   max-width: 100%;
@@ -432,6 +439,14 @@ height: 160px; */
   transform: translate(5px, -4px);
 }
 
+.exp__link {
+  color: var(--first-color-dark);
+}
+
+.exp__link:hover {
+  color: var(--first-color-darker);
+}
+
 /* ===== SERVICES =====*/
 .services__container {
   row-gap: 2rem;
@@ -606,6 +621,10 @@ height: 160px; */
 .contact__text {
   display: block;
   padding-left: 1rem;
+}
+
+.contact-map-container {
+  width: 100%;
 }
 
 /* ===== FOOTER =====*/
