@@ -32,6 +32,8 @@ First pallete
 
 4/17/23
 
+- ADD: meta description tag
+
 - ADD: Google Maps iFrame for stone soup counseling
 
 3/23/23
