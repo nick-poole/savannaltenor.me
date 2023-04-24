@@ -30,6 +30,10 @@ First pallete
 
 ### Commit Log
 
+4/24/23
+
+- BRANCH: faq => FEAT: Integrate SERVICES section collapse toggle w/ javascript
+
 4/17/23
 
 - ADD: meta description tag

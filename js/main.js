@@ -5,19 +5,19 @@ closeMenu = document.getElementById("nav-close");
 
 // SHOW
 toggleMenu.addEventListener("click", () => {
-  navMenu.classList.toggle("show");
+    navMenu.classList.toggle("show");
 });
 
 // HIDDEN
 closeMenu.addEventListener("click", () => {
-  navMenu.classList.remove("show");
+    navMenu.classList.remove("show");
 });
 
 /*===== ACTIVE AND REMOVE MENU =====*/
 const navLink = document.querySelectorAll("nav__link");
 
 function linkAction() {
-  navMenu.classList.remove("show");
+    navMenu.classList.remove("show");
 }
 
 navLink.forEach((n) => n.addEventListener("click", linkAction));
@@ -28,21 +28,28 @@ const sections = document.querySelectorAll("section[id]");
 window.addEventListener("scroll", scrollActive);
 
 function scrollActive() {
-  const scrollY = window.pageYOffset;
+    const scrollY = window.pageYOffset;
 
-  sections.forEach((current) => {
-    const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 50;
-    sectionId = current.getAttribute("id");
+    sections.forEach((current) => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute("id");
 
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.add("active");
-    } else {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.remove("active");
-    }
-  });
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelector(".nav__menu a[href*=" + sectionId + "]").classList.add("active");
+        } else {
+            document
+                .querySelector(".nav__menu a[href*=" + sectionId + "]")
+                .classList.remove("active");
+        }
+    });
 }
+
+// =============== active-Service onClick ==========
+const toggles = document.querySelectorAll(".services__toggle");
+
+toggles.forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+        toggle.parentNode.classList.toggle("active-service");
+    });
+});
