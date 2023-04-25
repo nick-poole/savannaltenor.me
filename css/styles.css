@@ -17,6 +17,7 @@
     --text-color: #432329;
     --first-color-light: #e7c8a0;
     --first-color-lighter: #fefae0;
+    --white: #fff;
 
     /*===== Font and typography =====*/
     --body-font: "Poppins", sans-serif;
@@ -141,6 +142,9 @@ img {
     width: calc(100% - 2rem);
     margin-left: var(--mb-2);
     margin-right: var(--mb-2);
+}
+.flex {
+    display: flex;
 }
 
 .header {
@@ -450,16 +454,25 @@ height: 160px; */
 /* ===== SERVICES =====*/
 .services__container {
     row-gap: 2rem;
+    grid-template-columns: 1fr;
 }
 
 .services__content {
-    padding: 3rem 2rem;
+    height: auto;
+    width: 90%;
+    padding: 1rem 2rem;
+    margin: 0 auto;
     border: 1px solid var(--first-color);
     border-radius: 0.5rem;
-    text-align: center;
-    position: relative;
+    background-color: var(--first-color-dark);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
     overflow: hidden;
-    transition: 0.3s ease;
+    transition: 0.9s ease-in;
 }
 
 .services__icon {
@@ -473,8 +486,12 @@ height: 160px; */
 
 .services__title {
     font-size: 1.25rem;
-    color: var(--first-color-dark);
+    color: var(--first-color-lighter);
     margin-bottom: var(--mb-2);
+}
+
+.active-service .services__title {
+    color: var(--first-color-dark);
 }
 
 .services__description {
@@ -485,55 +502,33 @@ height: 160px; */
     display: block;
 }
 
-.services__content,
-.services__icon,
-.services__description,
-.services__title {
-    transition: 0.5s;
-}
-
-/* .services__content:hover {
-    background-color: var(--first-color);
-} */
-/* 
-.services__content:hover .services__icon {
-    background-color: var(--first-color-lighter);
-    color: var(--first-color);
-} */
-/* 
-.services__content:hover .services__description {
-    color: var(--first-color-lighter);
-} */
-
 .services__toggle {
     height: 30px;
     width: 30px;
     padding: 0;
+    margin: 1rem 0 0 0;
     border: 0;
     border-radius: 50%;
-
+    /* 
     position: absolute;
-    top: 3.5rem;
-    right: 3rem;
+    bottom: 1rem;
+    left: 46%; */
 
     background-color: #fff;
     color: var(--text-color);
     font-size: 1.5rem;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .services__toggle .chevron-up {
     display: none;
 }
 
-.services__toggle .active-service .chevron-up {
+.active-service .services__toggle .chevron-up {
     display: block;
 }
 
-.services__toggle .active-service .chevron-down {
+.active-service .services__toggle .chevron-down {
     display: none;
 }
 
@@ -542,7 +537,7 @@ height: 160px; */
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3), 0 3px 6px rgba(0, 0, 0, 0.4);
 }
 
-/* ===== PROJECT IN MIND  =====*/
+/* ===== Resources  =====*/
 .resources {
     background-color: var(--first-color);
     padding-bottom: 2rem;
@@ -670,9 +665,31 @@ height: 160px; */
     display: block;
     padding-left: 1rem;
 }
+/* 
+.contact__location {
+    border: 3px solid var(--first-color);
+} */
 
-.contact-map-container {
-    width: 100%;
+/* .contact_map-container {
+    width: 80%;
+    border: 3px solid var(--first-color);
+} */
+
+/*=== iFrame embed ===*/
+.map.section {
+    margin: 0;
+    padding: 0;
+}
+
+.map__container {
+}
+.iframe {
+    height: 400px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+
+    border: 3px solid #432329;
 }
 
 /* ===== FOOTER =====*/
@@ -727,7 +744,6 @@ height: 160px; */
 
     .about__container,
     .experience__container,
-    .services__container,
     .links__container,
     .contact__container,
     .contact__inputs {
@@ -846,8 +862,41 @@ height: 160px; */
         justify-content: space-around;
     }
 
-    .services__container,
+    .services__content {
+        background-color: var(--first-color);
+    }
+    /* .services__content:hover {
+        background-color: var(--first-color-dark);
+    } */
+
+    .services__content .active-service {
+        background-color: --var(--white);
+    }
+
+    /* .services__content,
+.services__icon,
+.services__description,
+.services__title {
+    transition: 1s ease-in;
+} */
+
+    /* .services__content:hover {
+    background-color: var(--first-color);
+} */
+    /* 
+.services__content:hover .services__icon {
+    background-color: var(--first-color-lighter);
+    color: var(--first-color);
+} */
+    /* 
+.services__content:hover .services__description {
+    color: var(--first-color-lighter);
+} */
+
     .links__container {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact__container {
     }
 }

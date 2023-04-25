@@ -4,6 +4,7 @@
 
 ### HTML CSS Javascript
 
+
 - Responsive Personal Complete Portfolio Using HTML CSS & JavaScript
 - Smooth scrolling in each section.
 - Developed first with the Mobile First methodology, then for desktop.
@@ -29,6 +30,10 @@ First pallete
   --first-color-lighter: #FAEDCD;
 
 ### Commit Log
+
+4/25/23
+
+- BRANCH: faq => FEAT: Remove grid media querys for SERVICES section && Widen iFrame map embed.
 
 4/24/23
 
@@ -106,9 +111,9 @@ Site live @ <https://savannaltenor.me>
 
 - ~~Integrate javascript action for nav menu tray.~~
 
-- FIX - education__rounder/line offset - css line 464.
+- ~~FIX - education__rounder/line offset - css line 464.~~
 
-- Finalize and condense services items and descriptions && integrate drop downs w/Javascript
+- Finalize and condense services items and descriptions && ~~integrate drop downs w/Javascript~~
 
 - Set alt tags for images and links
 
@@ -120,7 +125,7 @@ Site live @ <https://savannaltenor.me>
 
 - Resize Links header
 
-- Add link for Maryland 211
+- ~~Add link for Maryland 211~~
 
 - Style links for hover effect. [styles.css line 95]
 
