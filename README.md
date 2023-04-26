@@ -31,6 +31,10 @@ First pallete
 
 ### Commit Log
 
+4/26/23
+
+- BRANCH: footerExpansion => Expand FOOTER section to include contact section && Adjust media Queries for small screens
+
 4/25/23
 
 - BRANCH: faq => FEAT: Remove grid media querys for SERVICES section && Widen iFrame map embed.
@@ -49,7 +53,7 @@ First pallete
 
 - Eliminate Skills section and replace with Experience
 
-- Reformat README.md commit log to bottom-up approach. 
+- Reformat README.md commit log to bottom-up approach.
 
 3/22/23
 
@@ -107,6 +111,13 @@ Site live @ <https://savannaltenor.me>
 
 ### Action Items
 
+- modality,
+
+- Metropolitan line 94
+- remove couples and families
+
+- ADD: NPI number 1467156752
+
 - Consider alternative color scheme.
 
 - ~~Integrate javascript action for nav menu tray.~~
@@ -125,8 +136,33 @@ Site live @ <https://savannaltenor.me>
 
 - Resize Links header
 
+- edit footer description
+
+- address scrollTo base target blank
+
 - ~~Add link for Maryland 211~~
 
 - Style links for hover effect. [styles.css line 95]
 
 - Activate phone and email links
+
+- MOVE: => my specialties
+
+  I am committed to providing a safe and supportive environment for
+                            my clients to explore their thoughts, emotions, and behaviors, and to develop the skills and
+                            strategies necessary to lead happier, healthier lives. Whether you are struggling with
+                            depression, anxiety, trauma, relationship issues, or any other mental health concern, I am
+                            here to help you navigate your journey towards healing and growth.
+
+                        As a therapist who
+                            specializes in working with individual adults, I am here to support you in navigating a
+                            variety of challenges. Whether you are struggling with ADHD, anger issues, anxiety or
+                            stress, mood disorders like depression or bipolar disorder, codependency, low self-esteem,
+                            or coping with relationship, peer, or divorce issues, I am here to help.
+
+                        I offer a range of evidence-based treatment approaches, including
+                            eclectic, mindfulness, cognitive-behavioral therapy (CBT), somatic therapy, strengths-based,
+                            trauma-focused, and culturally sensitive interventions. I tailor my approach to your unique
+                            needs and preferences, working collaboratively with you to create a safe and supportive
+                            space for healing and growth. Let's work together to achieve your goals and improve your
+                            overall mental wellness.
