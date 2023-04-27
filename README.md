@@ -4,13 +4,20 @@
 
 ### HTML CSS Javascript
 
-
 - Responsive Personal Complete Portfolio Using HTML CSS & JavaScript
 - Smooth scrolling in each section.
 - Developed first with the Mobile First methodology, then for desktop.
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
 
 ### Color Palette
+
+Final Palette
+  --first-color: #
+  --first-color-dark: #
+  --first-color-darker: #
+  --text-color: #
+  --first-color-light: #
+  --first-color-lighter: #
 
 Second pallete
   --first-color: #602f3d;
@@ -30,6 +37,10 @@ First pallete
   --first-color-lighter: #FAEDCD;
 
 ### Commit Log
+
+4/27/23
+
+- Color Pallete Update
 
 4/26/23
 
