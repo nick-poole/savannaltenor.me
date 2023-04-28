@@ -28,7 +28,7 @@
     <body>
         <!-- ===== HEADER ===== -->
         <header class="header">
-            <nav class="nav grid">
+            <nav class="nav">
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="bx bx-menu"></i>
                 </div>
@@ -72,14 +72,14 @@
                                 class="home__social-link"><i class="bx bxl-linkedin-square"></i></a>
 
                             <a href="https://www.psychologytoday.com/us/therapists/savanna-altenor-baltimore-md/1118513"
-                                class="home__social-link"><i class="bx bxs-parking"></i></a>
+                                class="home__social-link">
+                                <!-- <a href="https://www.psychologytoday.com/profile/1118513" class="sx-verified-seal"></a> -->
+                                <i class="bx bxs-parking"></i></a>
 
                             <a href="https://www.stonesoupcounseling.com/" class="home__social-link">
                                 <img class="home__icon" src="/icons/stone-soup-320x400-fotor-bg-removed.png" alt="">
                                 <!-- <i class="bx bxs-institution"></i> -->
                             </a>
-
-
                         </div>
 
                         <a href="#contact" target="_self" class="button home__button">Contact</a>
@@ -89,9 +89,11 @@
 
             <!--===== ABOUT =====-->
             <section class="about section" id="about">
-                <h2 class="section-title">About Me</h2>
 
+                <h2 class="section-title">About Me</h2>
                 <div class="about__container grid">
+
+
                     <div class="about__data">
                         <p class="about__description">My name is Savanna Altenor, and I am licensed by the Maryland
                             State Board of Social Work Examiners (LMSW) (CAIP)
@@ -132,8 +134,9 @@
                         <div class="about__info-data">
                             <i class="bx bxs-briefcase-alt about__info-icon"></i>
                             <div>
-                                <span class="about__info-subtitle">Occupation</span>
-
+                                <span class="about__info-subtitle">
+                                    <a href="https://www.stonesoupcounseling.com/">Stone Soup Counseling</a>
+                                </span>
                                 <span class="about__info-subtitle-small">Therapist</span>
                             </div>
                         </div>
@@ -152,7 +155,6 @@
                             <ul>
                                 <li class="about__info-subtitle">CAIP</li>
                                 <li class="about__info-subtitle-small">Certified Anxiety Informed Professional</li>
-
                             </ul>
                         </div>
 
@@ -168,22 +170,30 @@
 
                         <div class="about__info-data">
                             <i class="bx bxs-phone about__info-icon"></i>
-                            <span class="about__info-subtitle">Cell: (443) 218-6077</span>
-                            <span class="about__info-subtitle">O: (410) 266-2270</span>
+                            <ul>
+                                <li class="about__info-subtitle">
+                                    Cell:
+                                    <a href="tel:+14432186077">(443) 218-6077</a>
+                                </li>
+                                <li class="about__info-subtitle">
+                                    Office:
+                                    <a href="tel:+14432662270">(443) 266-2270</a>
+                                </li>
+                            </ul>
                         </div>
-
 
                         <div class="about__info-data">
                             <i class="bx bx-envelope about__info-icon"></i>
-
-                            <a class="contact__text" href="mailto:saltenor@umaryland.edu">
-                                saltenor@umaryland.edu</a>
-                        </div>
-
-                        <div class="about__info-data">
-                            <i class="bx bxs-envelope about__info-icon"></i>
-                            <a class="contact__text" href="mailto:saltenor@protonmail.com">
-                                saltenor@protonmail.com</a>
+                            <ul>
+                                <!-- <li class="about__info-subtitle">
+                                    <a class="contact__text" href="mailto:savannaltenor@stonesoupcounseling.com">
+                                        savannaltenor@stonesoupcounseling.com</a>
+                                </li> -->
+                                <li class="about__info-subtitle">
+                                    <a class="contact__text" href="mailto:saltenor@protonmail.com">
+                                        saltenor@protonmail.com</a>
+                                </li>
+                            </ul>
                         </div>
 
                         <h3 class="about__info-title">Modality</h3>
@@ -196,106 +206,117 @@
                         </div>
                     </div>
 
-                    <div class="about__info special__approach grid">
-                        <div>
-                            <h3 class="about__info-title">My Specialties</h3>
-                            <div class="about__info-data">
-                                <i class="bx bx-universal-access about__info-icon"></i>
-                                <ul class="about__info-list">
-                                    <li class="about__info-subtitle">Behavioral</li>
-                                    <li class="about__info-subtitle-small">ADHD</li>
-                                    <li class="about__info-subtitle-small">Anger Issues</li>
-                                    <li class="about__info-subtitle-small">Coping Skills</li>
-                                </ul>
-                            </div>
 
-                            <div class="about__info-data">
-                                <i class="bx bxs-brain about__info-icon"></i>
-                                <ul class="about__info-list">
-                                    <li class="about__info-subtitle">Cognitive</li>
-                                    <li class="about__info-subtitle-small">Anxiety</li>
-                                    <li class="about__info-subtitle-small">Depression</li>
-                                    <li class="about__info-subtitle-small">Bipolar</li>
-                                    <li class="about__info-subtitle-small">Self-Esteem</li>
-                                    <li class="about__info-subtitle-small">Mood Disorders</li>
-                                </ul>
-                            </div>
+                </div>
+            </section>
 
-                            <div class="about__info-data">
-                                <i class="bx bx-heart-circle about__info-icon"></i>
-                                <ul class="about__info-list">
-                                    <li class="about__info-subtitle">Interpersonal</li>
-                                    <li class="about__info-subtitle-small">Relationship Issues</li>
-                                    <li class="about__info-subtitle-small">Codependency</li>
-                                    <li class="about__info-subtitle-small">Divorce</li>
-                                </ul>
-                            </div>
+            <section class="img-section">
+                <img src="/images/dan-meyers-you-matter.jpg" alt="">
+            </section>
 
-                            <div class="about__info-data">
-                                <i class="bx bxs-florist about__info-icon"></i>
-                                <ul class="about__info-list">
-                                    <li class="about__info-subtitle">Mindfulness</li>
-                                    <li class="about__info-subtitle-small">Stress</li>
-                                    <li class="about__info-subtitle-small">Spirituality</li>
-                                </ul>
-                            </div>
-                        </div>
+            <!-- =============== SPECIALTIES & APPROACH =============== -->
+            <section class="special__approach section grid">
+                <div class="special grid">
+                    <h3 class="about__info-title">My Specialties</h3>
+                    <div class="about__info-data">
+                        <i class="bx bx-universal-access about__info-icon"></i>
+                        <ul class="about__info-list">
+                            <li class="about__info-subtitle">Behavioral</li>
+                            <li class="about__info-subtitle-small">ADHD</li>
+                            <li class="about__info-subtitle-small">Anger Issues</li>
+                            <li class="about__info-subtitle-small">Coping Skills</li>
+                        </ul>
+                    </div>
 
-                        <div>
-                            <h3 class="about__info-title">My Approach</h3>
-                            <div class="about__info-data">
-                                <i class="bx bx-universal-access about__info-icon"></i>
-                                <ul class="about__info-list">
-                                    <li class="about__info-subtitle">CBT</li>
+                    <div class="about__info-data">
+                        <i class="bx bxs-brain about__info-icon"></i>
+                        <ul class="about__info-list">
+                            <li class="about__info-subtitle">Cognitive</li>
+                            <li class="about__info-subtitle-small">Anxiety</li>
+                            <li class="about__info-subtitle-small">Depression</li>
+                            <li class="about__info-subtitle-small">Bipolar</li>
+                            <li class="about__info-subtitle-small">Self-Esteem</li>
+                            <li class="about__info-subtitle-small">Mood Disorders</li>
+                        </ul>
+                    </div>
 
-                                </ul>
-                            </div>
+                    <div class="about__info-data">
+                        <i class="bx bx-heart-circle about__info-icon"></i>
+                        <ul class="about__info-list">
+                            <li class="about__info-subtitle">Interpersonal</li>
+                            <li class="about__info-subtitle-small">Relationship Issues</li>
+                            <li class="about__info-subtitle-small">Codependency</li>
+                            <li class="about__info-subtitle-small">Divorce</li>
+                        </ul>
+                    </div>
 
-                            <div class="about__info-data">
-                                <i class="bx bxs-flag-alt about__info-icon"></i>
-                                <ul class="about__info-list">
-                                    <li class="about__info-subtitle">Culturally Sensitive</li>
-
-                                </ul>
-                            </div>
-
-                            <div class="about__info-data">
-                                <i class="bx bx-basket about__info-icon"></i>
-                                <ul class="about__info-list">
-                                    <li class="about__info-subtitle">Eclectic</li>
-                                </ul>
-                            </div>
-
-                            <div class="about__info-data">
-                                <i class="bx bxs-florist about__info-icon"></i>
-                                <ul class="about__info-list">
-                                    <li class="about__info-subtitle">Mindfulness</li>
-                                </ul>
-                            </div>
-
-                            <div class="about__info-data">
-                                <i class="bx bx-shield-quarter about__info-icon"></i>
-                                <ul class="about__info-list">
-                                    <li class="about__info-subtitle">Strengths-Based</li>
-                                </ul>
-                            </div>
-
-                            <div class="about__info-data">
-                                <i class="bx bx-body about__info-icon"></i>
-                                <ul class="about__info-list">
-                                    <li class="about__info-subtitle"> Somatic</li>
-                                </ul>
-                            </div>
-
-                            <div class="about__info-data">
-                                <i class="bx bx-band-aid about__info-icon"></i>
-                                <ul class="about__info-list">
-                                    <li class="about__info-subtitle">Trauma Focused</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="about__info-data">
+                        <i class="bx bxs-florist about__info-icon"></i>
+                        <ul class="about__info-list">
+                            <li class="about__info-subtitle">Mindfulness</li>
+                            <li class="about__info-subtitle-small">Stress</li>
+                            <li class="about__info-subtitle-small">Spirituality</li>
+                        </ul>
                     </div>
                 </div>
+
+                <div class="approach grid">
+                    <h3 class="about__info-title">My Approach</h3>
+                    <div class="about__info-data">
+                        <i class="bx bx-universal-access about__info-icon"></i>
+                        <ul class="about__info-list">
+                            <li class="about__info-subtitle">CBT</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="about__info-data">
+                        <i class="bx bxs-flag-alt about__info-icon"></i>
+                        <ul class="about__info-list">
+                            <li class="about__info-subtitle">Culturally Sensitive</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="about__info-data">
+                        <i class="bx bx-basket about__info-icon"></i>
+                        <ul class="about__info-list">
+                            <li class="about__info-subtitle">Eclectic</li>
+                        </ul>
+                    </div>
+
+                    <div class="about__info-data">
+                        <i class="bx bxs-florist about__info-icon"></i>
+                        <ul class="about__info-list">
+                            <li class="about__info-subtitle">Mindfulness</li>
+                        </ul>
+                    </div>
+
+                    <div class="about__info-data">
+                        <i class="bx bx-shield-quarter about__info-icon"></i>
+                        <ul class="about__info-list">
+                            <li class="about__info-subtitle">Strengths-Based</li>
+                        </ul>
+                    </div>
+
+                    <div class="about__info-data">
+                        <i class="bx bx-body about__info-icon"></i>
+                        <ul class="about__info-list">
+                            <li class="about__info-subtitle"> Somatic</li>
+                        </ul>
+                    </div>
+
+                    <div class="about__info-data">
+                        <i class="bx bx-band-aid about__info-icon"></i>
+                        <ul class="about__info-list">
+                            <li class="about__info-subtitle">Trauma Focused</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="img-section">
+                <img src="/images/lesly-juarez-DFtjXYd5Pto-unsplash.jpg" alt="">
             </section>
 
             <!--===== EXPERIENCE =====-->
@@ -385,8 +406,8 @@
                     <div class="exp__content">
                         <div>
                             <h3 class="exp__year">2019 - 2020</h3>
-                            <span class="exp__organization">Mercer County Area Agency</span>
-                            <span class="exp__organization"> on Aging</span>
+                            <span class="exp__organization">Mercer County Area </span>
+                            <span class="exp__organization"> Agency on Aging</span>
                         </div>
 
                         <div class="exp__time">
@@ -791,25 +812,36 @@
 
                 <div class="footer__social">
                     <a href="https://www.linkedin.com/in/savanna-altenor-lmsw-508136238/" class="footer__link">
-                        <i class="bx bxl-linkedin-square"></i>
+                        <i class="bx bxl-linkedin-square footer__icon"></i>
                     </a>
 
                     <a href="https://www.psychologytoday.com/us/therapists/savanna-altenor-baltimore-md/1118513"
                         class="footer__link">
-                        <i class="bx bxs-parking"></i>
+                        <i class="bx bxs-parking footer__icon"></i>
                     </a>
 
                     <a href="https://mdbnc.health.maryland.gov/bsweverification/Details.aspx?ID=45812"
-                        class="home__social-link" alt="License Verification"><i class="bx bxs-bank"></i></a>
+                        class="footer__link" alt="License Verification"><i class="bx bxs-bank footer__icon"></i></a>
                 </div>
-
                 <p class="footer__copy">All rights Reserved 2023</p>
             </div>
+
+            <!--===== PSYCH TODAY BADGE =====
+            
+            
+            <script type="text/javascript" src="https://member.psychologytoday.com/verified-seal.js" data-badge="17"
+                data-id="1118513"
+                data-code="aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy9bQkFER0VdL3Byb2ZpbGUvW1BST0ZJTEVfSURdP2NhbGxiYWNrPXN4Y2FsbGJhY2s="></script>-->
+
         </footer>
+
+
         <!--===== MAIN JS =====-->
         <script src="./js/main.js"></script>
 
         <!--===== EMAIL JS =====-->
+
+
     </body>
 
 </html>

@@ -38,6 +38,10 @@ First pallete
 
 ### Commit Log
 
+4/28/23
+
+- ADD: section images && alter footer color scheme
+
 4/27/23
 
 - Color Pallete Update
