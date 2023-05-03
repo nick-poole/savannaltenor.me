@@ -66,8 +66,9 @@ a:hover {
 }
 
 .img-section {
+    margin: 0 auto;
     height: ;
-    width: 100vw;
+    width: 80vw;
 }
 
 h2 {

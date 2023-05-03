@@ -38,6 +38,10 @@ First pallete
 
 ### Commit Log
 
+5/3/23
+
+- ALTER: Services, Specialties, && ADD: Insurances
+
 5/2/23
 
 - BRANCH: emailJs => FEAT: Integrate #contactForm w/ EmailJs && CREATE: thanks.html redirect
@@ -132,14 +136,6 @@ Site live @ <https://savannaltenor.me>
 
 ### Action Items
 
-
-- Metropolitan line 94
-- remove couples and families
-
-- ADD: NPI number 1467156752
-
-- Consider alternative color scheme.
-
 - ~~Integrate javascript action for nav menu tray.~~
 
 - ~~FIX - education__rounder/line offset - css line 464.~~
@@ -165,13 +161,3 @@ Site live @ <https://savannaltenor.me>
 - Activate phone and email links
 
 - Add 211 to resource links
-
-  I am committed to providing a safe and supportive environment for
-                            my clients to explore their thoughts, emotions, and behaviors, and to develop the skills and
-                            strategies necessary to lead happier, healthier lives. Whether you are struggling with
-                            depression, anxiety, trauma, relationship issues, or any other mental health concern, I am
-                            here to help you navigate your journey towards healing and growth.
- I tailor my approach to your unique
-                            needs and preferences, working collaboratively with you to create a safe and supportive
-                            space for healing and growth. Let's work together to achieve your goals and improve your
-                            overall mental wellness.
