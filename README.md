@@ -38,6 +38,10 @@ First pallete
 
 ### Commit Log
 
+5/2/23
+
+- BRANCH: emailJs => FEAT: Integrate #contactForm w/ EmailJs && CREATE: thanks.html redirect
+
 4/28/23
 
 - ADD: section images && alter footer color scheme

@@ -21,6 +21,8 @@
         <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon_io/favicon-16x16.png">
         <link rel="manifest" href="./icons/favicon_io/site.webmanifest">
 
+
+
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="./css/styles.css">
     </head>
@@ -77,8 +79,7 @@
                                 <i class="bx bxs-parking"></i></a>
 
                             <a href="https://www.stonesoupcounseling.com/" class="home__social-link">
-                                <img class="home__icon" src="/icons/stone-soup-320x400-fotor-bg-removed.png" alt="">
-                                <!-- <i class="bx bxs-institution"></i> -->
+                                <i class="bx bxs-institution"></i>
                             </a>
                         </div>
 
@@ -184,16 +185,8 @@
 
                         <div class="about__info-data">
                             <i class="bx bx-envelope about__info-icon"></i>
-                            <ul>
-                                <!-- <li class="about__info-subtitle">
-                                    <a class="contact__text" href="mailto:savannaltenor@stonesoupcounseling.com">
-                                        savannaltenor@stonesoupcounseling.com</a>
-                                </li> -->
-                                <li class="about__info-subtitle">
-                                    <a class="contact__text" href="mailto:saltenor@protonmail.com">
-                                        saltenor@protonmail.com</a>
-                                </li>
-                            </ul>
+                            <a class="about__info-subtitle" href="mailto:hello@savannaltenor.me">
+                                Email Me!</a>
                         </div>
 
                         <h3 class="about__info-title">Modality</h3>
@@ -340,7 +333,7 @@
                         </div>
 
                         <div>
-                            <h3 class="exp__position">Therapist</h3>
+                            <h3 class="exp__position">Psychotherapist</h3>
                             <span class="exp__specialty">Provided psycotherapy for (# of clients)</span>
                         </div>
                     </div>
@@ -749,19 +742,28 @@
                     <h2 class="contact__title">Reach Out</h2>
 
                     <div class="contact__container grid">
-                        <form action="" class="contact__form">
+                        <form action="" class="contact__form" id="contactForm">
                             <div class="contact__inputs">
-                                <input type="text" placeholder="Name" class="contact__input">
-                                <input type="email" placeholder="Email" class="contact__input">
+                                <input type="text" placeholder="Name" name="name" class="contact__input" id="formName"
+                                    required>
+                                <input type="email" placeholder="Email" name="email" class="contact__input"
+                                    id="formEmail" required>
                             </div>
 
-                            <input type="text" placeholder="Subject" class="contact__input">
+                            <input type="text" name="subject" placeholder="Subject" class="contact__input"
+                                id="formSubject">
 
-                            <textarea name="message" placeholder="Message" class="contact__input" id="" cols="0"
-                                rows="10"></textarea>
+                            <textarea name="message" placeholder="message" class="contact__input" id="formMessage"
+                                cols="0" rows="10"></textarea>
 
-                            <input type="submit" value="Send Message" class="button contact__button">
+                            <input type="submit" class="button contact__button" id="formButton" value="Send Email">
+                            <!-- 
+                            <button class="button contact__button" onclick="sendMail()">Send
+                                Message</button> -->
+
                         </form>
+
+
 
                         <div class="contact__info flex">
                             <div class="contact__group">
@@ -780,7 +782,7 @@
                                 <h3 class="contact__subtitle">Email</h3>
                                 <ul class="contact__list">
                                     <li class="contact__item">
-                                        <a href="mailto:saltenor@protonmail.com">saltenor@protonmail.com</a>
+                                        <a href="mailto:hello@savannaltenor.me">hello@savannaltenor.me</a>
                                     </li>
                                     <li class="contact__item">
                                         <a class="email__long"
@@ -835,13 +837,13 @@
 
         </footer>
 
-
         <!--===== MAIN JS =====-->
         <script src="./js/main.js"></script>
 
         <!--===== EMAIL JS =====-->
-
-
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script src="./js/email.js"></script>
     </body>
 
 </html>
