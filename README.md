@@ -4,20 +4,28 @@
 
 ### HTML CSS Javascript
 
-- Responsive Personal Complete Portfolio Using HTML CSS & JavaScript
+#### Boxicons EmailJs
+
+- Responsive Personal Resume/Info Website Using HTML CSS & JavaScript
 - Smooth scrolling in each section.
 - Developed first with the Mobile First methodology, then for desktop.
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
+- Contact Form Integration w/ EmailJs
+- Equipped with Psychology Today Verification Badge
 
 ### Color Palette
 
 Final Palette
-  --first-color: #
-  --first-color-dark: #
-  --first-color-darker: #
-  --text-color: #
-  --first-color-light: #
-  --first-color-lighter: #
+  --first-color: #63732f;
+  --first-color-dark: #3f590b;
+  --first-color-darker: #8a8c6f;
+  --title-color: #966245;
+  --subtitle-color: #a69163;
+  --text-color: #4d5232;
+  --link-color: #966245;
+  --link-color-active: #dce908;
+  --first-color-light: #ddbea9;
+  --first-color-lighter: #fff;
 
 Second pallete
   --first-color: #602f3d;
@@ -39,6 +47,8 @@ First pallete
 ### Commit Log
 
 5/3/23
+
+- INSERT: Psychology Today Badge in FOOTER && space SERVICES descriptions
 
 - ALTER: Services, Specialties, && ADD: Insurances
 
@@ -136,19 +146,11 @@ Site live @ <https://savannaltenor.me>
 
 ### Action Items
 
-- ~~Integrate javascript action for nav menu tray.~~
-
-- ~~FIX - education__rounder/line offset - css line 464.~~
-
-- Finalize and condense services items and descriptions && ~~integrate drop downs w/Javascript~~
-
 - Set alt tags for images and links
 
 - Resize links logos.
 
 - Update rgba for resource links
-
-- Change Area of expertise with Core Competencies
 
 - Resize Links header
 
@@ -157,7 +159,5 @@ Site live @ <https://savannaltenor.me>
 - ~~Add link for Maryland 211~~
 
 - Style links for hover effect. [styles.css line 95]
-
-- Activate phone and email links
 
 - Add 211 to resource links
