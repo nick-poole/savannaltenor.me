@@ -46,6 +46,10 @@ First pallete
 
 ### Commit Log
 
+5/4/23
+
+- BRANCH: links => IMPROVE: LINKS links & ADD: link descriptions.
+
 5/3/23
 
 - INSERT: Psychology Today Badge in FOOTER && space SERVICES descriptions
