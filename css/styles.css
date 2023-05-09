@@ -358,11 +358,12 @@ height: 160px; */
 }
 
 .about__data {
-    text-align: center;
+    text-align: start;
 }
 
 .about__description {
     margin-bottom: var(--mb-4);
+    text-indent: 48px;
 }
 
 /* suggested margin: 0 auto; */
@@ -379,7 +380,7 @@ height: 160px; */
 .about__info-title {
     font-size: var(--h3-font-size);
     color: var(--title-color);
-    margin-bottom: var(--mb-2);
+    margin-bottom: var(--mb-3);
 }
 
 /* padding-left suggested 1.5rem */
@@ -414,20 +415,29 @@ height: 160px; */
 .special__approach {
     //width: 100vw;
     margin: 0 auto;
-    //padding: 0;
+    padding: 0;
     align-self: end;
     justify-self: center;
 }
+.insurance,
+.mode {
+    //width: 100%;
+}
 
-.special,
-.approach {
+.insurance-mode__group,
+.specialties__group,
+.approach__group {
+    width: 100%;
     grid-template-columns: 1fr;
 }
-.special {
+
+.specialties__group {
+    margin: 0 auto;
 }
 
-.approach {
-    margin: 0;
+.spec-1,
+.spec-2 {
+    margin: 0 auto;
 }
 
 /* ===== EXPERIENCE & EDUCATION =====*/
@@ -648,7 +658,7 @@ height: 160px; */
 .resources__img {
     justify-self: center;
     border-radius: 0.5rem;
-    margin-bottom: 2rem;
+    margin: 0 2rem 2rem 0;
 }
 /* 
 #HotlineModuleMap {
@@ -660,9 +670,16 @@ height: 160px; */
 } */
 
 /* ===== LINKS =====*/
+.links {
+    margin-bottom: 0;
+}
 .links__container {
+    max-width: 100%;
+    margin-bottom: 0;
+    row-gap: 4rem;
+
     justify-items: center;
-    row-gap: 2rem;
+    grid-template-columns: 1fr;
 }
 
 .links__group {
@@ -672,10 +689,12 @@ height: 160px; */
 .links__logo {
     max-width: 250px;
     height: auto;
+    margin: 0 auto;
 }
 .right__call {
     max-width: 750px;
     height: auto;
+    margin: 0 auto var(--mb-4) auto;
 }
 
 /* .links__data {
@@ -939,7 +958,6 @@ height: 160px; */
     }
 
     .experience__container,
-    .links__container,
     .contact__inputs {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -960,6 +978,16 @@ height: 160px; */
         padding-left: 4rem;
     }
 
+    .insurance-mode__group,
+    .specialties__group,
+    .approach__group {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .insurance-mode__group h3 {
+        //margin-left: -1rem;
+    }
+
     .experience__time {
         padding: 0 2rem;
     }
@@ -969,7 +997,7 @@ height: 160px; */
     }
 
     .resources__container {
-        background-color: var(--first-color);
+        background-color: var(--first-color-darker);
         /* grid-template-columns: 2fr 1.2fr; */
         padding: 0;
     }
@@ -993,6 +1021,10 @@ height: 160px; */
         height: 400px;
         width: 230px;
         align-self: flex-end;
+    }
+
+    .links__container {
+        grid-template-columns: 1fr 1fr;
     }
 
     /* consider reverting */
@@ -1058,30 +1090,40 @@ height: 160px; */
         background-color: --var(--white);
     }
 
-    /* .services__content,
-.services__icon,
-.services__description,
-.services__title {
-    transition: 1s ease-in;
-} */
-
-    /* .services__content:hover {
-    background-color: var(--first-color);
-} */
     /* 
-.services__content:hover .services__icon {
-    background-color: var(--first-color-lighter);
-    color: var(--first-color);
-} */
-    /* 
-.services__content:hover .services__description {
-    color: var(--first-color-lighter);
-} */
-
-    .links__container {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    } */
 
     .contact__container {
     }
+}
+
+@media screen and (min-width: 1420px) {
+    .about__container {
+        grid-template-columns: 4fr 1fr;
+        column-gap: 5rem;
+    }
+
+    .special__approach .about__info-title {
+        text-align: center;
+    }
+
+    .insurance-mode__group,
+    .specialties__group {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .spec-1,
+    .spec-2 {
+        margin: 0;
+    }
+
+    .approach__group {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .links__container {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
 }
