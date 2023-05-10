@@ -21,6 +21,12 @@
     --first-color-light: #ddbea9;
     --first-color-lighter: #fff;
 
+    --linked-color: #0077b5;
+    --psych-color: #477be4;
+    --stone-color: #0d8585;
+    --stone-color-text:#22e4ad;
+    --stone-color-alt: #654188;
+
     --white: #fff;
     --black: #343434;
 
@@ -39,6 +45,9 @@
     --mb-3: 1.5rem;
     --mb-4: 2rem;
     --mb-5: 2.5rem;
+
+    /*===== Indentation =====*/
+    --indent: 24px;
 
     /*===== z index =====*/
     --z-fixed: 100;
@@ -101,11 +110,12 @@ ul {
 
 a {
     text-decoration: none;
-    color: var(--link-color);
+    color: var(--stone-color);
 }
 
 a:hover {
     color: var(--link-color-active);
+    text-decoration: overline;
     transition: 0.5s;
 }
 
@@ -125,9 +135,9 @@ img {
 
 /*===== CLASS CSS ===== */
 .section {
-    padding: 4rem 0 2rem;
+    padding: 0;
     width: 95%;
-    margin: 2rem auto;
+    margin: 0 auto;
 }
 
 .section-title {
@@ -173,6 +183,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    //z-index: var(--z-fixed);
 }
 
 /* left: -100% <---> 0 menu slide */
@@ -238,6 +249,7 @@ img {
 /*Active menu*/
 .active {
     color: var(--link-color-active);
+    text-decoration: overline;
 }
 /*===== HOME =====*/
 
@@ -282,6 +294,7 @@ height: 160px; */
     font-size: var(--h1-font-size);
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
+    margin-bottom: 1rem;
 }
 
 .home__profession {
@@ -293,6 +306,7 @@ height: 160px; */
 .home__social {
     margin-bottom: 5rem;
     width: 200px;
+    flex-direction: column;
 
     align-items: center;
     justify-content: space-between;
@@ -301,26 +315,62 @@ height: 160px; */
 /* border-radius consider: none; */
 .home__social-link {
     display: inline-flex;
-    background-color: var(--first-color);
     color: var(--white);
-    //font-size: 1.5rem;
-    border-radius: 50%;
-    padding: 0.4rem;
-    margin: 0 var(--mb-1);
-    transition: 0.3s;
+    font-size: 1rem;
+    border-radius: .5rem;
+    padding: .4rem;
+    margin: .7rem var(--mb-1);
 }
+
+.linked {
+    background-color: var(--linked-color);
+    border: 2px solid var(--linked-color);
+}
+.linked:hover {
+    color: var(--linked-color);
+    background-color: var(--white); 
+}
+
+.psych {
+    background-color: var(--psych-color);
+    border:  2px solid var(--psych-color);
+}
+.psych:hover {
+    color: var(--psych-color);
+    background-color: var(--white);
+    
+}
+
+.stone {
+    background-color: var(--stone-color);
+    border: 2px solid var(--stone-color);
+}
+.stone:hover {
+    background-color: var(--stone-color-text);
+    border: 2px solid var(--stone-color-alt);
+    color: var(--stone-color);
+}
+.linked:hover,
+.psych:hover,
+.stone:hover{
+    text-decoration: none;
+}
+
+
+
 .home__icon {
     font-size: var(--h3-font-size);
 }
 
-.home__social-link:hover {
+/* .home__social-link:hover {
     background-color: var(--link-color-active);
     color: var(--first-color);
-}
+} */
 
 /* suggested 100% but will likely use 70% */
 .home__button {
     width: 70%;
+    margin: 0 auto;
 }
 
 /*===== BUTTONS =====*/
@@ -331,12 +381,14 @@ height: 160px; */
     padding: 1rem 2rem;
     font-weight: var(--font-semi-bold);
     border-radius: 0.5rem;
+    text-decoration: none;
     transition: 0.3s;
 }
 
 .button:hover {
     background-color: var(--link-color-active);
     color: var(--first-color);
+    text-decoration: none;
 }
 
 .button__light {
@@ -363,7 +415,7 @@ height: 160px; */
 
 .about__description {
     margin-bottom: var(--mb-4);
-    text-indent: 48px;
+    text-indent: var(--indent);
 }
 
 /* suggested margin: 0 auto; */
@@ -374,13 +426,14 @@ height: 160px; */
 }
 
 .about__info {
+    width: 250px;
     margin: 0 0 var(--mb-4) 0;
 }
 
 .about__info-title {
     font-size: var(--h3-font-size);
     color: var(--title-color);
-    margin-bottom: var(--mb-3);
+    margin-bottom: var(--mb-1);
 }
 
 /* padding-left suggested 1.5rem */
@@ -509,14 +562,19 @@ height: 160px; */
 }
 
 .exp__link {
-    color: var(--first-color-dark);
+    color: var(--stone-color);
 }
 
 .exp__link:hover {
-    color: var(--first-color-darker);
+    color: var(--link-color-active);
 }
 
 /* ===== SERVICES =====*/
+.services {
+    margin: 0 auto;
+    padding: 0;
+}
+
 .services__container {
     row-gap: 2rem;
     grid-template-columns: 1fr;
@@ -565,6 +623,7 @@ height: 160px; */
 
 .services__description {
     display: none;
+    text-indent: var(--indent);
 }
 
 .active-service .services__description {
@@ -588,6 +647,7 @@ height: 160px; */
     color: var(--text-color);
     font-size: 1.5rem;
     cursor: pointer;
+    z-index: auto;
 }
 
 .services__toggle:hover {
@@ -600,6 +660,7 @@ height: 160px; */
     position: relative;
     bottom: 15px;
     left: -12px;
+    
 }
 
 .services__toggle .chevron-up {
@@ -733,11 +794,12 @@ height: 160px; */
     transition: 0.6s ease-in-out;
 }
 
-.links__title {
+/* .links__title {
     font-size: var(--h3-font-size);
     color: var(--first-color-darker);
     margin-bottom: 1rem;
-}
+} */
+
 .links__subtitle {
     font-size: var(--small-font-size);
     padding-left: 0.5rem;
@@ -749,6 +811,7 @@ height: 160px; */
 
 .links__description {
     margin: 1rem;
+    text-indent: var(--indent);
 }
 
 /* ===== MODULE =====*/
@@ -776,12 +839,13 @@ height: 160px; */
     font-size: var(--normal-font-size);
     margin-bottom: var(--mb-2);
     border-radius: 0.5rem;
+    
 }
 
-.contact ::placeholder {
-    color: var(--text-color);
+.contact__input::placeholder {
+    color: var(--first-color-dark);
     font-family: var(--body-font);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-semi-bold);
 }
 
 .contact__button {
@@ -913,6 +977,7 @@ height: 160px; */
 .footer__link:hover {
     background-color: var(--link-color-active);
     color: var(--first-color);
+    text-decoration: none;
 }
 
 .footer__icon {
@@ -946,7 +1011,7 @@ height: 160px; */
 
 @media screen and (min-width: 768px) {
     .home__button {
-        width: initial;
+        width: 60%;
     }
 
     .nav__menu {
@@ -955,6 +1020,12 @@ height: 160px; */
 
     .about__container {
         grid-template-columns: 2fr 1fr;
+    }
+
+    .home__social {
+        width: 70%;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     .experience__container,
@@ -1065,6 +1136,7 @@ height: 160px; */
     }
 
     .section {
+
         padding: 3rem 0 2rem;
     }
 
@@ -1089,9 +1161,6 @@ height: 160px; */
     .services__content .active-service {
         background-color: --var(--white);
     }
-
-    /* 
-    } */
 
     .contact__container {
     }

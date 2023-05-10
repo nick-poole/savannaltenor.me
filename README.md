@@ -119,6 +119,10 @@ ___
 
 ## Commit Log
 
+5/9/23
+
+- FINAL REVIEW #1: Resize ABOUT section links with colors.
+
 5/8/23
 
 - BRANCH: resize => ADJUST: Media queries for ABOUT, SPECIALTIES, & LINKS sections && REFORMAT: README.md
@@ -231,16 +235,6 @@ ___
 
 - Set alt tags for images and links
 
-- Resize links logos.
-
-- Update rgba for resource links
-
-- Resize Links header
+- Finalize Thanks page
 
 - edit footer description
-
-- ~~Add link for Maryland 211~~
-
-- Style links for hover effect. [styles.css line 95]
-
-- Add 211 to resource links.

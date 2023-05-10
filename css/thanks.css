@@ -20,7 +20,7 @@ body {
     font-size: 1rem;
     font-weight: 500;
     background-color: var(--first-color-lighter);
-    color: #63732f;
+    color: red;
     line-height: 1.6;
 }
 
@@ -68,7 +68,7 @@ a:hover {
 .img-section {
     margin: 0 auto;
     height: ;
-    width: 80vw;
+    width: 100vw;
 }
 
 h2 {
@@ -77,10 +77,23 @@ h2 {
 /*======= THANKS ========*/
 
 .thanks {
+    border: 2px solid red;
+    height: 100vh;
+    width: 100vw;
 }
+/* .thanks {
+    background-image: url("/images/alexas_fotos-thank-you-2400-1600.jpg");
+    background-position: 50% 50%;
+
+    height: 100vh;
+    width: 100vw;
+} */
 
 .thanks__container {
-    margin: 0 auto;
+    margin: 0rem auto;
+    /* position: absolute;
+    top: 30%;
+    left: 50%; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -92,7 +105,7 @@ h2 {
     margin: 2rem 0;
 }
 .pt__vector {
-    height: 8rem;
+    height: 6rem;
     width: 15rem;
 }
 
