@@ -121,6 +121,8 @@ ___
 
 5/9/23
 
+- UPDATE: Favicon with headshot image
+
 - FINAL REVIEW #1: Resize ABOUT section links with colors.
 
 5/8/23
