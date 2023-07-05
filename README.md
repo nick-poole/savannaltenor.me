@@ -124,6 +124,8 @@ ___
 
 7/5/23
 
+- BRANCH master: Refactored CSS code to remove empty rulesets
+
 - BRANCH w3c: CSS/Javascript Changes made for W3C validation
 
    1. Removed duplicate variables and css comments
