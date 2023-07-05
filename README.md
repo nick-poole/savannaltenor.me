@@ -1,15 +1,18 @@
 
 # Personal Professional Website for Mental Health Therapist
 
-___
-
 ## [savannaltenor.me](https://savannaltenor.me)
+
+## HTML / CSS / Javascript
+
+__
 
 - HTML
 - CSS
 - Javascript
 - Boxicons
 - EmailJS
+- Psychology Today Verification Badge
 
 - [Personal Professional Website for Mental Health Therapist](#personal-professional-website-for-mental-health-therapist)
 - [[savannaltenor.me](https://savannaltenor.me)](#-savannaltenorme--https---savannaltenorme-)
@@ -153,7 +156,7 @@ ___
 
 4/26/23
 
-- BRANCH: copetencies => ADD: Specialties and Approach && ALTER: psychologytoday links
+- BRANCH: competencies => ADD: Specialties and Approach && ALTER: psychologytoday links
 
 - BRANCH: footerExpansion => Expand FOOTER section to include contact section && Adjust media Queries for small screens
 
