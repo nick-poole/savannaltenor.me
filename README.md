@@ -122,20 +122,28 @@ ___
 
 ## Commit Log
 
+7/5/23
+
+- BRANCH w3c: CSS/Javascript Changes made for W3C validation
+
+   1. Removed duplicate variables and css comments
+   2. Fix navigation link activation on scroll
+         - Updated `main.js` to properly activate the navigation links when scrolling past their corresponding sections. The issue with `sectionLink` being null is resolved by iterating over the navigation links directly and checking the `href` attribute against the current section's `id`.
+
 7/4/23
 
-- BRANCH w3c: HTML Changes made for w3c validation
+- BRANCH w3c: HTML Changes made for W3C validation
 
-  1. Fixed broken LMSW link in header
-  2. Refactor HTML structure for improved accessibility
-  3. Fix image dimensions in HTML markup
-  4. Replaced `<section>` tags with `<div>` tags for appropriate sections.
-  5. Updated filepaths to use relative paths for improved flexibility.
-  6. Removed the "action" attribute from the `<form>` tag since form submission is handled by email.js.
-  7. Removed the `type/text` attribute from the script tags for JavaScript resources.
-  8. Set a valid value for the "cols" attribute of the `<textarea>` tag (cols="40").
-  9. Removed html comments
-  10. Changed the loading attribute to `lazy/eager`for select images.
+   1. Fixed broken LMSW link in header
+   2. Refactor HTML structure for improved accessibility
+   3. Fix image dimensions in HTML markup
+   4. Replaced `<section>` tags with `<div>` tags for appropriate sections.
+   5. Updated filepaths to use relative paths for improved flexibility.
+   6. Removed the "action" attribute from the `<form>` tag since form submission is handled by email.js.
+   7. Removed the `type/text` attribute from the script tags for JavaScript resources.
+   8. Set a valid value for the "cols" attribute of the `<textarea>` tag (cols="40").
+   9. Removed html comments
+   10. Changed the loading attribute to `lazy/eager`for select images.
 
 5/9/23
 
@@ -256,3 +264,5 @@ ___
 - Set alt tags for images
 
 - Finalize Thanks page
+
+- Adjust LINKS section grid size issues

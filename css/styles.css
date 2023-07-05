@@ -60,7 +60,6 @@
         --h3-font-size: 1.25rem;
         --normal-font-size: 1rem;
         --small-font-size: 0.875rem;
-        --small-font-size: 0.813rem;
     }
 }
 
@@ -156,11 +155,8 @@ img {
     display: grid;
     grid-template-columns: 100%;
     column-gap: 2rem;
-
     width: calc(100% - 2rem);
     margin: 2rem auto;
-    //margin-left: var(--mb-2);
-    //margin-right: var(--mb-2);
 }
 .flex {
     display: flex;
@@ -183,7 +179,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    //z-index: var(--z-fixed);
+    z-index: var(--z-fixed);
 }
 
 .nav__menu {
@@ -439,7 +435,6 @@ img {
 
 /* ===== SPECIALTY & APPROACH =====*/
 .special__approach {
-    //width: 100vw;
     margin: 0 auto;
     padding: 0;
     align-self: end;
@@ -447,7 +442,7 @@ img {
 }
 .insurance,
 .mode {
-    //width: 100%;
+    width: 100%;
 }
 
 .insurance-mode__group,
@@ -484,7 +479,7 @@ img {
 .exp__year,
 .exp__position,
 .exp__race {
-    font-size: var(----normal-font-size-font-size);
+    font-size: var(--normal-font-size);
     margin-bottom: 0.25rem;
 }
 
@@ -625,7 +620,6 @@ img {
 
 .services__toggle:hover {
     background-color: var(--link-color-active);
-    //transform: scaleX(2);
 }
 
 .chevron-down,
@@ -732,8 +726,8 @@ img {
 }
 
 .links__logo {
-    //max-width: 200px;
-    max-height: 200px;
+    max-width: 150px;
+    max-height: 150px;
     height: 150px;
     margin: 0;
 }
@@ -920,8 +914,6 @@ img {
     width: 100%;
     margin: 0 auto;
     padding: 0;
-
-    //border: 3px solid #432329;
 }
 
 .footer__description {
@@ -1023,10 +1015,6 @@ img {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .insurance-mode__group h3 {
-        //margin-left: -1rem;
-    }
-
     .experience__time {
         padding: 0 2rem;
     }
@@ -1097,7 +1085,6 @@ img {
     }
 
     .home__container {
-        height: 100vh - 1rem;
         margin-top: 3rem;
     }
 

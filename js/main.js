@@ -22,28 +22,33 @@ function linkAction() {
 
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*== SCROLL SECTIONS ACTIVE LINK ==*/
-const sections = document.querySelectorAll("section[id]");
+/*====== SCROLL SECTIONS ACTIVE LINK ======*/
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav__list a");
 
-window.addEventListener("scroll", scrollActive);
+    window.addEventListener("scroll", () => {
+        const currentScroll = window.scrollY;
 
-function scrollActive() {
-    const scrollY = window.pageYOffset;
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop - 50;
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute("id");
 
-    sections.forEach((current) => {
-        const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute("id");
-
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelector(".nav__menu a[href*=" + sectionId + "]").classList.add("active");
-        } else {
-            document.querySelector(".nav__menu a[href*=${sectionId}]").classList.remove("active");
-        }
+            navLinks.forEach((link) => {
+                if (link.getAttribute("href") === `#${sectionId}`) {
+                    if (currentScroll >= sectionTop && currentScroll < sectionTop + sectionHeight) {
+                        link.classList.add("active");
+                    } else {
+                        link.classList.remove("active");
+                    }
+                }
+            });
+        });
     });
-}
+});
 
-// =============== active-Service onClick ==========
+// =============== active-Service onClick ========== */
 const toggles = document.querySelectorAll(".services__toggle");
 
 toggles.forEach((toggle) => {
