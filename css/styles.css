@@ -688,6 +688,8 @@ img {
 }
 
 .resources__img {
+    height: 600px;
+    width: 500px;
     justify-self: center;
     border-radius: 0.5rem;
     margin: 0 2rem 2rem 0;

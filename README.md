@@ -122,6 +122,21 @@ ___
 
 ## Commit Log
 
+7/4/23
+
+- BRANCH w3c: HTML Changes made for w3c validation
+
+  1. Fixed broken LMSW link in header
+  2. Refactor HTML structure for improved accessibility
+  3. Fix image dimensions in HTML markup
+  4. Replaced `<section>` tags with `<div>` tags for appropriate sections.
+  5. Updated filepaths to use relative paths for improved flexibility.
+  6. Removed the "action" attribute from the `<form>` tag since form submission is handled by email.js.
+  7. Removed the `type/text` attribute from the script tags for JavaScript resources.
+  8. Set a valid value for the "cols" attribute of the `<textarea>` tag (cols="40").
+  9. Removed html comments
+  10. Changed the loading attribute to `lazy/eager`for select images.
+
 5/9/23
 
 - UPDATE: Favicon with headshot image
@@ -238,8 +253,6 @@ ___
 
 ### Action Items
 
-- Set alt tags for images and links
+- Set alt tags for images
 
 - Finalize Thanks page
-
-- edit footer description
