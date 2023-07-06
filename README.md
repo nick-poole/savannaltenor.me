@@ -124,9 +124,11 @@ ___
 
 7/5/23
 
-- BRANCH master: Refactored CSS code to remove empty rulesets
+- BRANCH master: Update `sitemap.xml`.
 
-- BRANCH w3c: CSS/Javascript Changes made for W3C validation
+- BRANCH master: Refactored CSS code to remove empty rulesets.
+
+- BRANCH w3c: CSS/Javascript Changes made for W3C validation.
 
    1. Removed duplicate variables and css comments
    2. Fix navigation link activation on scroll
@@ -134,7 +136,7 @@ ___
 
 7/4/23
 
-- BRANCH w3c: HTML Changes made for W3C validation
+- BRANCH w3c: HTML Changes made for W3C validation.
 
    1. Fixed broken LMSW link in header
    2. Refactor HTML structure for improved accessibility
@@ -149,13 +151,13 @@ ___
 
 5/9/23
 
-- UPDATE: Favicon with headshot image
+- UPDATE: Favicon with headshot image.
 
 - FINAL REVIEW #1: Resize ABOUT section links with colors.
 
 5/8/23
 
-- BRANCH: resize => ADJUST: Media queries for ABOUT, SPECIALTIES, & LINKS sections && REFORMAT: README.md
+- BRANCH: resize => ADJUST: Media queries for ABOUT, SPECIALTIES, & LINKS sections && REFORMAT `README.md`
 
 5/4/23
 
@@ -169,7 +171,7 @@ ___
 
 5/2/23
 
-- BRANCH: emailJs => FEAT: Integrate #contactForm w/ EmailJs && CREATE: thanks.html redirect
+- BRANCH: emailJs => FEAT: Integrate #contactForm w/ EmailJs && CREATE: `thanks.html` redirect
 
 4/28/23
 
@@ -227,7 +229,7 @@ Site live @ [savannaltenor.me](https://savannaltenor.me)
 
 - INSERT icons/
 
-- INSERT images/howareyoureally-unsplash.jpg
+- INSERT `images/howareyoureally-unsplash.jpg`
 
 - INSERT images/988images/
 
