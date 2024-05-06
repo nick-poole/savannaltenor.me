@@ -1,11 +1,11 @@
 
 # Personal Professional Website for Mental Health Therapist
 
-## [savannaltenor.me](https://savannaltenor.me)
+## [savannaaltenor.com](https://savannaaltenor.com)
 
 ## HTML / CSS / Javascript
 
-__
+---
 
 - HTML
 - CSS
@@ -42,8 +42,6 @@ This is a responsive personal resume and informative website built using HTML, C
 
 The website includes explanations of therapy terminology and practices, as well as gives resources for those who need more invasive help such as the suicide prevention hotline, domestic abuse hotline, and other resources from state and local governments (Baltimore City). The navigation bar features scrollTo links that change to active class when matching the appropriate scrollHeight. The website also links to the provider's LinkedIn and Psychology Today pages.
 
-___
-
 ## Design
 
 ### Color Palette
@@ -63,13 +61,9 @@ Color Palette
   --first-color-lighter: #fff;
   --white: #fff;
 
-___
-
 ### Boxicons
 
-This project uses boxicons for style choices.
-
-Boxicon CDN
+The website utilizes Boxicons for its extensive collection of icons. The icons are incorporated directly into the HTML and CSS files using the Boxicon CDN.
 
 ```html
 <link rel="stylesheet" href="https://boxicons.com/css/boxicons.min.css">
@@ -99,8 +93,6 @@ Medium    13     14      15
 Large     16     17      18
 ```
 
-___
-
 ### EmailJS Integration
 
 The website also includes a contact form that utilizes EmailJs to send user messages to the provider's fastmail inbox.
@@ -112,15 +104,15 @@ The website also includes a contact form that utilizes EmailJs to send user mess
 
 More info on setting up EmailJs can be found @ [emailjs.com/docs/](https://www.emailjs.com/docs/)
 
-___
-
 ## Contributing
 
 As this is a personal website, there is little room for contributions. However, if you find any issues or have suggestions for improvements, please feel free to open an issue.
 
-___
-
 ## Commit Log
+
+5/5/24
+
+Migration to savannaaltenor.com
 
 7/5/23
 
