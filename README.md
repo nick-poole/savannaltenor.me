@@ -78,7 +78,7 @@ The website is equipped with the Psychology Today verification badge, providing 
 ```html
 <a href="https://www.psychologytoday.com/profile/1118513" class="sx-verified-seal"></a>
 
-<script type="text/javascript" src="https://member.psychologytoday.com/verified-seal.js" 
+<script type="text/javascript" src="https://member.psychologytoday.com/verified-seal.js"
   data-badge="17"
      data-id="1118513"
    data-code="aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy9bQkFER0VdL3Byb2ZpbGUvW1BST0ZJTEVfSURdP2NhbGxiYWNrPXN4Y2FsbGJhY2s="></script>
@@ -86,7 +86,7 @@ The website is equipped with the Psychology Today verification badge, providing 
 
 The data badge number corresponds to a specific combination of color and size.
 
-```text  
+```text
          Small   Med    Large
 Light     10     11      12
 Medium    13     14      15
@@ -109,6 +109,10 @@ More info on setting up EmailJs can be found @ [emailjs.com/docs/](https://www.e
 As this is a personal website, there is little room for contributions. However, if you find any issues or have suggestions for improvements, please feel free to open an issue.
 
 ## Commit Log
+
+1/6/25
+
+feat: Update copy to LCSW-C per client request. Update footer year to 2025
 
 5/5/24
 
