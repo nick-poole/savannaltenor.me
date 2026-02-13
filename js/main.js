@@ -1,7 +1,7 @@
 /*===== MENU SHOW Y HIDDEN =====*/
 const navMenu = document.getElementById("nav-menu");
-toggleMenu = document.getElementById("nav-toggle");
-closeMenu = document.getElementById("nav-close");
+const toggleMenu = document.getElementById("nav-toggle");
+const closeMenu = document.getElementById("nav-close");
 
 // SHOW
 toggleMenu.addEventListener("click", () => {
@@ -14,7 +14,7 @@ closeMenu.addEventListener("click", () => {
 });
 
 /*===== ACTIVE AND REMOVE MENU =====*/
-const navLink = document.querySelectorAll("nav__link");
+const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {
     navMenu.classList.remove("show");

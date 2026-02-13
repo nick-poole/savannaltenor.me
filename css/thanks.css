@@ -19,8 +19,8 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    background-color: var(--first-color-lighter);
-    color: red;
+    background-color: #fff;
+    color: #4d5232;
     line-height: 1.6;
 }
 
@@ -36,7 +36,7 @@ p {
 }
 
 h3 {
-    font-weight: var(--font-semi-bold);
+    font-weight: 600;
 }
 
 a {
@@ -44,14 +44,10 @@ a {
     background-color: #3f590b;
     color: #dce908;
     padding: 1rem 2rem;
-    font-weight: var(--font-semi-bold);
+    font-weight: 600;
     border-radius: 0.5rem;
     transition: 0.5s;
     text-decoration: none;
-}
-
-a:hover {
-    color: ;
 }
 
 a:hover {
@@ -59,41 +55,23 @@ a:hover {
     color: #3f590b;
 }
 
-.button {
-}
-
-.section {
-}
-
 .img-section {
     margin: 0 auto;
-    height: ;
     width: 100vw;
 }
 
 h2 {
     margin: 2rem 0;
 }
-/*======= THANKS ========*/
 
+/*======= THANKS ========*/
 .thanks {
-    border: 2px solid red;
     height: 100vh;
     width: 100vw;
 }
-/* .thanks {
-    background-image: url("/images/alexas_fotos-thank-you-2400-1600.jpg");
-    background-position: 50% 50%;
-
-    height: 100vh;
-    width: 100vw;
-} */
 
 .thanks__container {
-    margin: 0rem auto;
-    /* position: absolute;
-    top: 30%;
-    left: 50%; */
+    margin: 0 auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -110,5 +88,5 @@ h2 {
 }
 
 .return {
-    margin-top: 2rem 0 10rem 0;
+    margin: 2rem 0 10rem 0;
 }

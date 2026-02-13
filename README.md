@@ -195,7 +195,7 @@ Migration to savannaaltenor.com
 
 - ADD: meta description tag
 
-- ADD: Google Maps iFrame for stone soup counseling
+- ADD: Google Maps iFrame for office location
 
 3/23/23
 
