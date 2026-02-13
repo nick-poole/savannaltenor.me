@@ -23,9 +23,7 @@
 
     --linked-color: #0077b5;
     --psych-color: #477be4;
-    --stone-color: #0d8585;
-    --stone-color-text: #22e4ad;
-    --stone-color-alt: #654188;
+    --accent-color: #0d8585;
 
     --white: #fff;
     --black: #343434;
@@ -109,7 +107,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: var(--stone-color);
+    color: var(--accent-color);
 }
 
 a:hover {
@@ -322,18 +320,8 @@ img {
     background-color: var(--white);
 }
 
-.stone {
-    background-color: var(--stone-color);
-    border: 2px solid var(--stone-color);
-}
-.stone:hover {
-    background-color: var(--stone-color-text);
-    border: 2px solid var(--stone-color-alt);
-    color: var(--stone-color);
-}
 .linked:hover,
-.psych:hover,
-.stone:hover {
+.psych:hover {
     text-decoration: none;
 }
 
@@ -529,7 +517,7 @@ img {
 }
 
 .exp__link {
-    color: var(--stone-color);
+    color: var(--accent-color);
 }
 
 .exp__link:hover {
