@@ -31,8 +31,8 @@
 		<!-- ===== HEADER ===== -->
 		<header class="header">
 			<nav class="nav">
-				<div class="nav__toggle" id="nav-toggle">
-					<i class="bx bx-menu"></i>
+				<div class="nav__toggle" id="nav-toggle" role="button" aria-label="Open menu" tabindex="0">
+					<i class="bx bx-menu" aria-hidden="true"></i>
 				</div>
 
 				<div>
@@ -44,8 +44,8 @@
 				</div>
 
 				<div class="nav__menu" id="nav-menu">
-					<div class="nav__close" id="nav-close">
-						<i class="bx bx-x"></i>
+					<div class="nav__close" id="nav-close" role="button" aria-label="Close menu" tabindex="0">
+						<i class="bx bx-x" aria-hidden="true"></i>
 					</div>
 
 					<ul class="nav__list">
@@ -424,7 +424,7 @@
 
 						<div>
 							<h3 class="exp__position">Mental Health Therapist</h3>
-							<span class="exp__specialty">Provided psycotherapy for 30 clients</span>
+							<span class="exp__specialty">Provided psychotherapy for 30 clients</span>
 						</div>
 					</div>
 
@@ -467,7 +467,7 @@
 							<span class="exp__description">
 								<a class="exp__link" href="https://www.uwcm.org/211">Maryland 211 Operator</a>
 							</span>
-							<span class="exp__description">Neigborhood Zone at Poppleton</span>
+							<span class="exp__description">Neighborhood Zone at Poppleton</span>
 							<span class="exp__description">
 								<a class="exp__link" href="https://www.uwcm.org/housing-programs">
 									Eviction Relocation Program
@@ -548,7 +548,7 @@
 						<div>
 							<h3 class="exp__race">Internship</h3>
 							<span class="exp__specialty">Bachelor of Arts in Psychology</span>
-							<span class="exp__specialty">Minor in Anthropolgy</span>
+							<span class="exp__specialty">Minor in Anthropology</span>
 							<span class="exp__specialty"><i>Magna Cum Laude</i></span>
 							<span class="exp__specialty">McNair Scholars Program</span>
 							<span class="exp__specialty">Psi Chi Honor Society</span>
@@ -569,7 +569,7 @@
 						<div>
 							<h3 class="exp__race">Undergraduate</h3>
 							<span class="exp__specialty">Bachelor of Arts in Psychology</span>
-							<span class="exp__specialty">Minor in Anthropolgy</span>
+							<span class="exp__specialty">Minor in Anthropology</span>
 							<span class="exp__specialty"><i>Magna Cum Laude</i></span>
 							<span class="exp__specialty">McNair Scholars Program</span>
 							<span class="exp__specialty">Psi Chi Honor Society</span>
@@ -776,7 +776,7 @@
 
 					<div class="services__content">
 						<i class="bx bx-shield-quarter services__icon"></i>
-						<h3 class="services__title">What is an Strengths-based Approach?</h3>
+						<h3 class="services__title">What is a Strengths-based Approach?</h3>
 						<p class="services__description">
 							A strengths-based approach is a way of doing therapy that focuses on what you're good at and
 							what you're good at doing, instead of just looking at your weaknesses or problems. The idea
@@ -1009,7 +1009,7 @@
 						<a href="https://www.samhsa.gov/find-help/national-helpline" class="links__link">
 							<img src="images/samsa_png_270_kb.png" alt="" />
 						</a>
-						<h2 class="links__title">SAMSHA</h2>
+						<h2 class="links__title">SAMHSA</h2>
 						<h3 class="links__subtitle">Confidential Treatment Referral</h3>
 						<p class="links__description">
 							The Substance Abuse and Mental Health Services Administration (SAMHSA) provides a free and
@@ -1108,51 +1108,13 @@
 						</div>
 					</div>
 
-					<div class="contact__container grid">
-						<form class="contact__form" id="contactForm">
-							<div class="contact__inputs">
-								<input
-									type="text"
-									placeholder="Name"
-									name="name"
-									class="contact__input"
-									id="formName"
-									required />
-								<input
-									type="email"
-									placeholder="Email"
-									name="email"
-									class="contact__input"
-									id="formEmail"
-									required />
-							</div>
-
-							<input
-								type="text"
-								name="subject"
-								placeholder="Subject"
-								class="contact__input"
-								id="formSubject"
-								required />
-
-							<textarea
-								name="message"
-								placeholder="Message"
-								class="contact__input"
-								id="formMessage"
-								cols="40"
-								rows="10"
-								required></textarea>
-
-							<input type="submit" class="button contact__button" id="formButton" value="Send Email" />
-						</form>
-					</div>
-				</section>
+					</section>
 
 				<!--===== iFrame Embed =====-->
 				<div class="map__container flex">
 					<iframe
 						class="iframe"
+						title="Google Maps - Stone Soup Counseling, LLC location"
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3085.2091440189743!2d-76.64814108768948!3d39.35150017151243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81b7837dfe3d1%3A0x614d0d0c9d58f88c!2sStone%20Soup%20Counseling%2C%20LLC!5e0!3m2!1sen!2sus!4v1681772409593!5m2!1sen!2sus"
 						allowfullscreen=""
 						loading="lazy"
@@ -1197,8 +1159,5 @@
 		<!--===== MAIN JS =====-->
 		<script src="js/main.js"></script>
 
-		<!--===== EMAIL JS =====-->
-		<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-		<script src="js/email.js"></script>
 	</body>
 </html>
