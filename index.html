@@ -1189,7 +1189,8 @@
 			</div>
 
 			<div>
-				<p class="footer__copy">All Rights Reserved &commat; 2025</p>
+				<p class="footer__copy">All Rights Reserved &commat; <span id="copyright-year"></span></p>
+		<script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
 			</div>
 		</footer>
 
