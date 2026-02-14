@@ -3,11 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<meta
 			name="description"
 			content="Licensed Certified Social Worker - Clinical (LCSW-C, CCATP) in Baltimore. Savanna Altenor provides evidence-based therapy for anxiety, depression, and group therapy in Roland Park and Towson." />
-		<base target="_blank" />
 
 		<title>Savanna Altenor, LCSW-C, CCATP | Mental Health Therapist | Baltimore</title>
 
@@ -28,43 +26,59 @@
 	</head>
 
 	<body>
-		<!-- ===== HEADER ===== -->
-		<header class="header">
-			<nav class="nav">
-				<div class="nav__toggle" id="nav-toggle" role="button" aria-label="Open menu" tabindex="0">
+		<!-- ===== SKIP LINK ===== -->
+		<a href="#main-content" class="skip-link">Skip to main content</a>
+
+		<!-- ===== HEADER & TOP NAV ===== -->
+		<header class="header" id="header">
+			<nav class="nav container" aria-label="Primary navigation">
+				<a href="#home" class="nav__logo">
+					Savanna Altenor
+					<span class="nav__logo-credential">LCSW-C</span>
+				</a>
+
+				<button
+					class="nav__toggle"
+					id="nav-toggle"
+					aria-label="Open menu"
+					aria-expanded="false"
+					aria-controls="nav-menu">
 					<i class="bx bx-menu" aria-hidden="true"></i>
-				</div>
+				</button>
 
-				<div>
-					<span class="nav__logo">LCSW-C</span>
-				</div>
-
-				<div class="nav__menu" id="nav-menu">
-					<div class="nav__close" id="nav-close" role="button" aria-label="Close menu" tabindex="0">
-						<i class="bx bx-x" aria-hidden="true"></i>
-					</div>
-
+				<div class="nav__menu" id="nav-menu" role="navigation">
 					<ul class="nav__list">
-						<li class="nav__item"><a href="#home" target="_self" class="nav__link active">Home</a></li>
-						<li class="nav__item"><a href="#about" target="_self" class="nav__link">About</a></li>
-						<li class="nav__item"><a href="#experience" target="_self" class="nav__link">Experience</a></li>
-						<li class="nav__item"><a href="#services" target="_self" class="nav__link">Services</a></li>
-						<li class="nav__item"><a href="#resources" target="_self" class="nav__link">Resources</a></li>
-						<li class="nav__item"><a href="#contact" target="_self" class="nav__link">Contact</a></li>
+						<li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+						<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+						<li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+						<li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+						<li class="nav__item"><a href="#resources" class="nav__link">Resources</a></li>
+						<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
 					</ul>
+
+					<button
+						class="nav__close"
+						id="nav-close"
+						aria-label="Close menu">
+						<i class="bx bx-x" aria-hidden="true"></i>
+					</button>
 				</div>
+
+				<div class="nav__overlay" id="nav-overlay"></div>
 			</nav>
 		</header>
 
-		<main class="main">
-			<!--===== HOME =====-->
-			<section class="home" id="home">
-				<div class="home__container grid">
+		<main class="main" id="main-content">
+			<!--===== HOME / HERO =====-->
+			<section class="home" id="home" aria-label="Introduction">
+				<div class="home__container container">
 					<div class="home__data">
 						<div class="home__img">
 							<img
 								src="images/greenhouseheadshot.png"
-								alt="Headshot image of Savanna Altenor, Mental Health Therapist"
+								alt="Headshot of Savanna Altenor, Mental Health Therapist"
+								width="200"
+								height="200"
 								loading="eager" />
 						</div>
 
@@ -73,33 +87,38 @@
 							<br />
 							LCSW-C, CCATP
 						</h1>
-						<span class="home__profession">Mental Health Therapist</span>
+						<p class="home__profession">Mental Health Therapist</p>
 
-						<div class="home__social flex">
+						<div class="home__social">
 							<a
 								href="https://www.linkedin.com/in/savanna-altenor-508136238/"
-								class="home__social-link linked">
-								Linked
-								<i class="bx bxl-linkedin-square home__icon"></i>
+								target="_blank"
+								rel="noopener noreferrer"
+								class="home__social-link home__social-link--linkedin"
+								aria-label="Savanna Altenor on LinkedIn">
+								<i class="bx bxl-linkedin-square home__social-icon" aria-hidden="true"></i>
+								LinkedIn
 							</a>
 
-							<a
-								href="https://www.psychologytoday.com/us/therapists/savanna-altenor-baltimore-md/1571952"
-								class="home__social-link psych">
-								<i class="bx bxs-parking home__icon"></i>
-								sychology Today
-							</a>
+							<div class="home__badge">
+								<a href="https://www.psychologytoday.com/profile/1571952" target="_blank" rel="noopener noreferrer" class="sx-verified-seal"></a>
+								<script
+									src="https://member.psychologytoday.com/verified-seal.js"
+									data-badge="17"
+									data-id="1571952"
+									data-code="aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy9bQkFER0VdL3Byb2ZpbGUvW1BST0ZJTEVfSURdP2NhbGxiYWNrPXN4Y2FsbGJhY2s="></script>
+							</div>
 						</div>
 
-						<a href="#contact" target="_self" class="button home__button">Contact</a>
+						<a href="#contact" class="button home__button">Contact</a>
 					</div>
 				</div>
 			</section>
 
 			<!--===== ABOUT =====-->
-			<section class="about section" id="about">
+			<section class="about section" id="about" aria-label="About Savanna Altenor">
 				<h2 class="section-title">About Me</h2>
-				<div class="about__container grid">
+				<div class="about__container container">
 					<div class="about__data">
 						<p class="about__description">
 							As a clinician with Suburban Crossroads Counseling, I provide individual therapy services that are tailored to meet your unique needs and
@@ -134,16 +153,16 @@
 						</p>
 					</div>
 
-					<div class="about__info grid">
+					<div class="about__info">
 						<h3 class="about__info-title">Information</h3>
 
 						<div class="about__info-data">
-							<i class="bx bx-user about__info-icon"></i>
+							<i class="bx bx-user about__info-icon" aria-hidden="true"></i>
 							<span class="about__info-subtitle">Savanna Altenor</span>
 						</div>
 
 						<div class="about__info-data">
-							<i class="bx bxs-briefcase-alt about__info-icon"></i>
+							<i class="bx bxs-briefcase-alt about__info-icon" aria-hidden="true"></i>
 							<div>
 								<span class="about__info-subtitle">Suburban Crossroads Counseling</span>
 								<span class="about__info-subtitle-small">Mental Health Therapist</span>
@@ -151,7 +170,7 @@
 						</div>
 
 						<div class="about__info-data">
-							<i class="bx bx-id-card about__info-icon"></i>
+							<i class="bx bx-id-card about__info-icon" aria-hidden="true"></i>
 							<ul class="about__info-list">
 								<li class="about__info-subtitle">LCSW-C</li>
 								<li class="about__info-subtitle-small">Licensed Certified</li>
@@ -160,7 +179,7 @@
 						</div>
 
 						<div class="about__info-data">
-							<i class="bx bxs-certification about__info-icon"></i>
+							<i class="bx bxs-certification about__info-icon" aria-hidden="true"></i>
 							<ul>
 								<li class="about__info-subtitle">CCATP</li>
 								<li class="about__info-subtitle-small">Certified Clinical Anxiety Treatment Professional</li>
@@ -168,23 +187,23 @@
 						</div>
 
 						<div class="about__info-data">
-							<i class="bx bx-credit-card-front about__info-icon"></i>
+							<i class="bx bx-credit-card-front about__info-icon" aria-hidden="true"></i>
 							<div>
 								<span class="about__info-subtitle">NPI #</span>
 								<span class="about__info-subtitle-small">
-									<a href="https://npiprofile.com/npi/1467156752">1467156752</a>
+									<a href="https://npiprofile.com/npi/1467156752" target="_blank" rel="noopener noreferrer">1467156752</a>
 								</span>
 							</div>
 						</div>
 
 						<div class="about__info-data">
-							<i class="bx bxs-phone about__info-icon"></i>
-							<a href="tel:+14108880847">(410) 888-0847</a>
+							<i class="bx bxs-phone about__info-icon" aria-hidden="true"></i>
+							<a href="tel:+14108880847" aria-label="Call (410) 888-0847">(410) 888-0847</a>
 						</div>
 
 						<div class="about__info-data">
-							<i class="bx bx-envelope about__info-icon"></i>
-							<a class="about__info-subtitle" href="mailto:saltenor@protonmail.com">Email Me!</a>
+							<i class="bx bx-envelope about__info-icon" aria-hidden="true"></i>
+							<a class="about__info-subtitle" href="mailto:saltenor@protonmail.com" aria-label="Email saltenor@protonmail.com">Email Me!</a>
 						</div>
 					</div>
 				</div>
@@ -193,16 +212,17 @@
 			<div class="img-section">
 				<img
 					src="images/dan-meyers-you-matter.jpg"
-					alt="Image with three signs: 'Don't give up. You are not alone. You matter'." />
+					alt="Three signs reading: Don't give up. You are not alone. You matter."
+					loading="lazy" />
 			</div>
 
 			<!-- =============== SPECIALTIES & APPROACH =============== -->
-			<section class="special__approach section">
+			<section class="special__approach section" aria-label="Specialties and therapeutic approach">
 				<div class="insurance-mode__group grid">
 					<div class="mode grid">
 						<h3 class="about__info-title">Population Served</h3>
 						<div class="about__info-data">
-							<i class="bx bxs-group about__info-icon"></i>
+							<i class="bx bxs-group about__info-icon" aria-hidden="true"></i>
 							<ul>
 								<li class="about__info-subtitle">Adults</li>
 								<li class="about__info-subtitle-small">Individuals</li>
@@ -212,7 +232,7 @@
 						</div>
 
 						<div class="about__info-data">
-							<i class="bx bx-laptop about__info-icon"></i>
+							<i class="bx bx-laptop about__info-icon" aria-hidden="true"></i>
 							<ul>
 								<li class="about__info-subtitle">Medium</li>
 								<li class="about__info-subtitle-small">In-person</li>
@@ -226,7 +246,7 @@
 				<div class="specialties__group grid">
 					<div class="spec-1 grid">
 						<div class="about__info-data">
-							<i class="bx bx-sad about__info-icon"></i>
+							<i class="bx bx-sad about__info-icon" aria-hidden="true"></i>
 							<ul class="about__info-list">
 								<li class="about__info-subtitle">Mood Disorders</li>
 								<li class="about__info-subtitle-small">Depression</li>
@@ -236,7 +256,7 @@
 						</div>
 
 						<div class="about__info-data">
-							<i class="bx bxs-brain about__info-icon"></i>
+							<i class="bx bxs-brain about__info-icon" aria-hidden="true"></i>
 							<ul class="about__info-list">
 								<li class="about__info-subtitle">Neurodevelopmental</li>
 								<li class="about__info-subtitle-small">ADHD</li>
@@ -244,9 +264,9 @@
 						</div>
 
 						<div class="about__info-data">
-							<i class="bx bx-tired about__info-icon"></i>
+							<i class="bx bx-tired about__info-icon" aria-hidden="true"></i>
 							<ul class="about__info-list">
-								<li class="about__info-subtitle">Anxiety disorders</li>
+								<li class="about__info-subtitle">Anxiety Disorders</li>
 								<li class="about__info-subtitle-small">Anxiety</li>
 								<li class="about__info-subtitle-small">OCD</li>
 								<li class="about__info-subtitle-small">Stress</li>
@@ -256,7 +276,7 @@
 
 					<div class="spec-2 grid">
 						<div class="about__info-data">
-							<i class="bx bx-heart-circle about__info-icon"></i>
+							<i class="bx bx-heart-circle about__info-icon" aria-hidden="true"></i>
 							<ul class="about__info-list">
 								<li class="about__info-subtitle">Interpersonal</li>
 								<li class="about__info-subtitle-small">Relationship Issues</li>
@@ -267,7 +287,7 @@
 						</div>
 
 						<div class="about__info-data">
-							<i class="bx bx-bookmark-alt about__info-icon"></i>
+							<i class="bx bx-bookmark-alt about__info-icon" aria-hidden="true"></i>
 							<ul class="about__info-list">
 								<li class="about__info-subtitle">Other Specialties</li>
 								<li class="about__info-subtitle-small">Anger Issues</li>
@@ -283,42 +303,42 @@
 				<h3 class="about__info-title">Modality</h3>
 				<div class="approach__group grid">
 					<div class="about__info-data">
-						<i class="bx bx-universal-access about__info-icon"></i>
+						<i class="bx bx-universal-access about__info-icon" aria-hidden="true"></i>
 						<ul class="about__info-list">
 							<li class="about__info-subtitle">CBT</li>
 						</ul>
 					</div>
 
 					<div class="about__info-data">
-						<i class="bx bxs-flag-alt about__info-icon"></i>
+						<i class="bx bxs-flag-alt about__info-icon" aria-hidden="true"></i>
 						<ul class="about__info-list">
 							<li class="about__info-subtitle">Culturally Sensitive</li>
 						</ul>
 					</div>
 
 					<div class="about__info-data">
-						<i class="bx bxs-florist about__info-icon"></i>
+						<i class="bx bxs-florist about__info-icon" aria-hidden="true"></i>
 						<ul class="about__info-list">
 							<li class="about__info-subtitle">Mindfulness</li>
 						</ul>
 					</div>
 
 					<div class="about__info-data">
-						<i class="bx bx-shield-quarter about__info-icon"></i>
+						<i class="bx bx-shield-quarter about__info-icon" aria-hidden="true"></i>
 						<ul class="about__info-list">
 							<li class="about__info-subtitle">Strengths-Based</li>
 						</ul>
 					</div>
 
 					<div class="about__info-data">
-						<i class="bx bx-band-aid about__info-icon"></i>
+						<i class="bx bx-band-aid about__info-icon" aria-hidden="true"></i>
 						<ul class="about__info-list">
 							<li class="about__info-subtitle">Trauma Focused</li>
 						</ul>
 					</div>
 
 					<div class="about__info-data">
-						<i class="bx bx-user-check about__info-icon"></i>
+						<i class="bx bx-user-check about__info-icon" aria-hidden="true"></i>
 						<ul class="about__info-list">
 							<li class="about__info-subtitle">Validation</li>
 						</ul>
@@ -329,11 +349,12 @@
 			<div class="img-section">
 				<img
 					src="images/lesly-juarez-DFtjXYd5Pto-unsplash.jpg"
-					alt="sign in window sill with the word 'mindfulness' written in cursive" />
+					alt="A sign in a window sill with the word mindfulness written in cursive"
+					loading="lazy" />
 			</div>
 
 			<!--===== EXPERIENCE =====-->
-			<section class="experience section" id="experience">
+			<section class="experience section" id="experience" aria-label="Professional experience and education">
 				<div class="exp__container grid">
 					<h2 class="section-title">My Experience</h2>
 					<div class="exp__content">
@@ -349,7 +370,6 @@
 
 						<div>
 							<h3 class="exp__position">Psychotherapist</h3>
-							<span class="exp__specialty"></span>
 						</div>
 					</div>
 
@@ -366,7 +386,6 @@
 
 						<div>
 							<h3 class="exp__position">Psychotherapist</h3>
-							<span class="exp__specialty"></span>
 						</div>
 					</div>
 
@@ -391,7 +410,7 @@
 						<div>
 							<h3 class="exp__year">2021 - 2022</h3>
 							<span class="exp__organization">
-								<a href="https://md-health.org/">Maryland Health Alliance</a>
+								<a href="https://md-health.org/" target="_blank" rel="noopener noreferrer">Maryland Health Alliance</a>
 							</span>
 						</div>
 
@@ -412,7 +431,7 @@
 						<div>
 							<h3 class="exp__year">2020 - 2021</h3>
 							<span class="exp__organization">
-								<a href="https://www.uwcm.org/">United Way of Central Maryland</a>
+								<a href="https://www.uwcm.org/" target="_blank" rel="noopener noreferrer">United Way of Central Maryland</a>
 							</span>
 						</div>
 
@@ -424,11 +443,11 @@
 						<div>
 							<h3 class="exp__position">Impact Strategies Intern</h3>
 							<span class="exp__description">
-								<a class="exp__link" href="https://www.uwcm.org/211">Maryland 211 Operator</a>
+								<a class="exp__link" href="https://www.uwcm.org/211" target="_blank" rel="noopener noreferrer">Maryland 211 Operator</a>
 							</span>
 							<span class="exp__description">Neighborhood Zone at Poppleton</span>
 							<span class="exp__description">
-								<a class="exp__link" href="https://www.uwcm.org/housing-programs">
+								<a class="exp__link" href="https://www.uwcm.org/housing-programs" target="_blank" rel="noopener noreferrer">
 									Eviction Relocation Program
 								</a>
 							</span>
@@ -448,7 +467,7 @@
 						</div>
 
 						<div>
-							<h3 class="exp__race">Aging Care Manager</h3>
+							<h3 class="exp__position">Aging Care Manager</h3>
 							<span class="exp__description">Managed 135+ caseload</span>
 						</div>
 					</div>
@@ -470,7 +489,7 @@
 						</div>
 
 						<div>
-							<h3 class="exp__race">License</h3>
+							<h3 class="exp__position">License</h3>
 							<span class="exp__specialty">LCSW-C</span>
 						</div>
 					</div>
@@ -487,7 +506,7 @@
 						</div>
 
 						<div>
-							<h3 class="exp__race">License</h3>
+							<h3 class="exp__position">License</h3>
 							<span class="exp__specialty">LMSW</span>
 						</div>
 					</div>
@@ -504,9 +523,8 @@
 						</div>
 
 						<div>
-							<h3 class="exp__race">Graduate</h3>
+							<h3 class="exp__position">Graduate</h3>
 							<span class="exp__specialty">Master of Social Work</span>
-							<span class="exp__specialty">Social Work</span>
 						</div>
 					</div>
 
@@ -522,10 +540,10 @@
 						</div>
 
 						<div>
-							<h3 class="exp__race">Internship</h3>
+							<h3 class="exp__position">Internship</h3>
 							<span class="exp__specialty">Bachelor of Arts in Psychology</span>
 							<span class="exp__specialty">Minor in Anthropology</span>
-							<span class="exp__specialty"><i>Magna Cum Laude</i></span>
+							<span class="exp__specialty"><em>Magna Cum Laude</em></span>
 							<span class="exp__specialty">McNair Scholars Program</span>
 							<span class="exp__specialty">Psi Chi Honor Society</span>
 						</div>
@@ -543,10 +561,10 @@
 						</div>
 
 						<div>
-							<h3 class="exp__race">Undergraduate</h3>
+							<h3 class="exp__position">Undergraduate</h3>
 							<span class="exp__specialty">Bachelor of Arts in Psychology</span>
 							<span class="exp__specialty">Minor in Anthropology</span>
-							<span class="exp__specialty"><i>Magna Cum Laude</i></span>
+							<span class="exp__specialty"><em>Magna Cum Laude</em></span>
 							<span class="exp__specialty">McNair Scholars Program</span>
 							<span class="exp__specialty">Psi Chi Honor Society</span>
 						</div>
@@ -555,192 +573,202 @@
 			</section>
 
 			<!--===== SERVICES =====-->
-			<section class="services section" id="services">
+			<section class="services section" id="services" aria-label="Therapy services offered">
 				<h2 class="section-title">My Services</h2>
 
 				<div class="services__container grid">
 					<div class="services__content">
-						<i class="bx bx-group services__icon"></i>
-						<h3 class="services__title">What is Therapy?</h3>
-						<p class="services__description">
-							Therapy is a type of treatment that helps people deal with their emotions, thoughts, and
-							behaviors. It can be done alone, in groups, or with a partner, and is usually led by a
-							trained professional like a therapist, counselor, or psychologist.
-						</p>
-						<p class="services__description">
-							During therapy, you'll talk about your thoughts, feelings, and experiences with your
-							therapist. They'll help you identify patterns in your behavior or thinking that might be
-							causing problems in your life. Together, you'll develop strategies to help you manage these
-							issues and improve your overall well-being.
-						</p>
-						<p class="services__description">
-							There are different types of therapy. Individual therapy is when you work one-on-one with a
-							therapist. This type of therapy is often helpful for people who want to work through
-							personal issues or explore their thoughts and emotions in a private setting. Group therapy
-							involves working with a group of people and a therapist to address common issues or
-							concerns. This can be a helpful way to connect with others who are going through similar
-							experiences and learn from each other's perspectives. Couples therapy involves working with
-							a therapist to improve your relationship. This type of therapy can be helpful for couples
-							who are struggling with communication, trust, or other issues.
-						</p>
-						<p class="services__description">
-							Therapy can be helpful for a wide range of issues such as anxiety, depression, stress,
-							trauma, and relationship problems. It can help you better understand yourself and your
-							emotions, develop coping strategies, and improve your overall quality of life. Remember that
-							therapy is a collaborative process, and you and your therapist work together to achieve your
-							goals.
-						</p>
-
-						<button class="services__toggle">
-							<i class="bx bx-chevron-down-circle chevron-down"></i>
-							<i class="bx bx-chevron-up-circle chevron-up"></i>
+						<div class="services__header">
+							<i class="bx bx-group services__icon" aria-hidden="true"></i>
+							<h3 class="services__title">What is Therapy?</h3>
+						</div>
+						<div class="services__body">
+							<p class="services__description">
+								Therapy is a type of treatment that helps people deal with their emotions, thoughts, and
+								behaviors. It can be done alone, in groups, or with a partner, and is usually led by a
+								trained professional like a therapist, counselor, or psychologist.
+							</p>
+							<p class="services__description">
+								During therapy, you'll talk about your thoughts, feelings, and experiences with your
+								therapist. They'll help you identify patterns in your behavior or thinking that might be
+								causing problems in your life. Together, you'll develop strategies to help you manage these
+								issues and improve your overall well-being.
+							</p>
+							<p class="services__description">
+								There are different types of therapy. Individual therapy is when you work one-on-one with a
+								therapist. This type of therapy is often helpful for people who want to work through
+								personal issues or explore their thoughts and emotions in a private setting. Group therapy
+								involves working with a group of people and a therapist to address common issues or
+								concerns. This can be a helpful way to connect with others who are going through similar
+								experiences and learn from each other's perspectives. Couples therapy involves working with
+								a therapist to improve your relationship. This type of therapy can be helpful for couples
+								who are struggling with communication, trust, or other issues.
+							</p>
+							<p class="services__description">
+								Therapy can be helpful for a wide range of issues such as anxiety, depression, stress,
+								trauma, and relationship problems. It can help you better understand yourself and your
+								emotions, develop coping strategies, and improve your overall quality of life. Remember that
+								therapy is a collaborative process, and you and your therapist work together to achieve your
+								goals.
+							</p>
+						</div>
+						<button class="services__toggle" aria-expanded="false" aria-label="Toggle details about therapy">
+							<i class="bx bx-chevron-down services__chevron" aria-hidden="true"></i>
 						</button>
 					</div>
 
 					<div class="services__content">
-						<i class="bx bx-universal-access services__icon"></i>
-						<h3 class="services__title">What is CBT?</h3>
-						<p class="services__description">
-							CBT stands for Cognitive Behavioral Therapy. It's a type of therapy that helps people
-							improve their mental health and well-being by changing negative thoughts and behaviors.
-						</p>
-						<p class="services__description">
-							In CBT, the therapist and client work together to identify negative thoughts and beliefs.
-							They then work on developing new, more positive ways of thinking and behaving. The goal is
-							to help the client become more aware of their thoughts and feelings and to learn how to
-							change unhelpful patterns of thinking and behavior that may be making them feel bad.
-						</p>
-						<p class="services__description">
-							CBT is based on the idea that our thoughts, feelings, and behaviors are all connected.
-							Changing one can lead to changes in the others. During therapy, specific techniques and
-							strategies are used to help the client reach their goals.
-						</p>
-						<p class="services__description">
-							CBT can be used to treat many mental health conditions such as anxiety, depression, PTSD,
-							and OCD. It can be used on its own or with medication. Many people have found CBT to be
-							helpful in improving their mental health and overall well-being.
-						</p>
-
-						<button class="services__toggle">
-							<i class="bx bx-chevron-down-circle chevron-down"></i>
-							<i class="bx bx-chevron-up-circle chevron-up"></i>
+						<div class="services__header">
+							<i class="bx bx-universal-access services__icon" aria-hidden="true"></i>
+							<h3 class="services__title">What is CBT?</h3>
+						</div>
+						<div class="services__body">
+							<p class="services__description">
+								CBT stands for Cognitive Behavioral Therapy. It's a type of therapy that helps people
+								improve their mental health and well-being by changing negative thoughts and behaviors.
+							</p>
+							<p class="services__description">
+								In CBT, the therapist and client work together to identify negative thoughts and beliefs.
+								They then work on developing new, more positive ways of thinking and behaving. The goal is
+								to help the client become more aware of their thoughts and feelings and to learn how to
+								change unhelpful patterns of thinking and behavior that may be making them feel bad.
+							</p>
+							<p class="services__description">
+								CBT is based on the idea that our thoughts, feelings, and behaviors are all connected.
+								Changing one can lead to changes in the others. During therapy, specific techniques and
+								strategies are used to help the client reach their goals.
+							</p>
+							<p class="services__description">
+								CBT can be used to treat many mental health conditions such as anxiety, depression, PTSD,
+								and OCD. It can be used on its own or with medication. Many people have found CBT to be
+								helpful in improving their mental health and overall well-being.
+							</p>
+						</div>
+						<button class="services__toggle" aria-expanded="false" aria-label="Toggle details about CBT">
+							<i class="bx bx-chevron-down services__chevron" aria-hidden="true"></i>
 						</button>
 					</div>
 
 					<div class="services__content">
-						<i class="bx bxs-florist services__icon"></i>
-						<h3 class="services__title">What is Mindfulness?</h3>
-						<p class="services__description">
-							Mindfulness is a way of paying attention to the present moment without getting distracted by
-							other things or judging yourself. It involves being aware of your thoughts, feelings, and
-							body sensations. You can practice mindfulness using different techniques like meditation,
-							breathing exercises, or yoga.
-						</p>
-						<p class="services__description">
-							The goal of mindfulness is to help you develop a sense of peace and clarity in your daily
-							life by becoming more aware of your thoughts, emotions, and behaviors. Research has shown
-							that mindfulness can help reduce stress and anxiety, improve emotional regulation, and
-							enhance overall well-being.
-						</p>
-						<p class="services__description">
-							Even though mindfulness has its origins in Buddhist meditation practices, it has been
-							adapted and incorporated into many different fields, including psychology, medicine, and
-							education. There are several mindfulness-based interventions and programs available, such as
-							Mindfulness-Based Stress Reduction (MBSR) and Mindfulness-Based Cognitive Therapy (MBCT).
-						</p>
-						<p class="services__description">
-							Practicing mindfulness involves focusing on the present moment, accepting your thoughts and
-							emotions without judgment, and becoming more aware of how they affect your behavior.
-							Mindfulness can be practiced on your own, with a group, or with a therapist, and can be
-							useful for anyone who wants to improve their mental and physical health. As your therapist,
-							I can help guide you in practicing mindfulness and integrating it into your daily life.
-						</p>
-
-						<button class="services__toggle">
-							<i class="bx bx-chevron-down-circle chevron-down"></i>
-							<i class="bx bx-chevron-up-circle chevron-up"></i>
+						<div class="services__header">
+							<i class="bx bxs-florist services__icon" aria-hidden="true"></i>
+							<h3 class="services__title">What is Mindfulness?</h3>
+						</div>
+						<div class="services__body">
+							<p class="services__description">
+								Mindfulness is a way of paying attention to the present moment without getting distracted by
+								other things or judging yourself. It involves being aware of your thoughts, feelings, and
+								body sensations. You can practice mindfulness using different techniques like meditation,
+								breathing exercises, or yoga.
+							</p>
+							<p class="services__description">
+								The goal of mindfulness is to help you develop a sense of peace and clarity in your daily
+								life by becoming more aware of your thoughts, emotions, and behaviors. Research has shown
+								that mindfulness can help reduce stress and anxiety, improve emotional regulation, and
+								enhance overall well-being.
+							</p>
+							<p class="services__description">
+								Even though mindfulness has its origins in Buddhist meditation practices, it has been
+								adapted and incorporated into many different fields, including psychology, medicine, and
+								education. There are several mindfulness-based interventions and programs available, such as
+								Mindfulness-Based Stress Reduction (MBSR) and Mindfulness-Based Cognitive Therapy (MBCT).
+							</p>
+							<p class="services__description">
+								Practicing mindfulness involves focusing on the present moment, accepting your thoughts and
+								emotions without judgment, and becoming more aware of how they affect your behavior.
+								Mindfulness can be practiced on your own, with a group, or with a therapist, and can be
+								useful for anyone who wants to improve their mental and physical health. As your therapist,
+								I can help guide you in practicing mindfulness and integrating it into your daily life.
+							</p>
+						</div>
+						<button class="services__toggle" aria-expanded="false" aria-label="Toggle details about mindfulness">
+							<i class="bx bx-chevron-down services__chevron" aria-hidden="true"></i>
 						</button>
 					</div>
 
 					<div class="services__content">
-						<i class="bx bx-plus-medical services__icon"></i>
-						<h3 class="services__title">Bereavement Support</h3>
-						<p class="services__description">
-							If you are struggling with grief and bereavement, please know that you are not alone.
-						</p>
-						<p class="services__description">
-							Losing a loved one is one of the most difficult experiences we can face in life. The process
-							of grief and bereavement can be overwhelming and isolating, and it is important to have
-							support during this time.
-						</p>
-						<p class="services__description">
-							Together, we can work towards healing and finding meaning in the midst of loss. Whether you
-							have experienced recent loss or are still struggling with unresolved grief from the past, I
-							am here to provide a safe and compassionate space to process your emotions and work through
-							your grief.
-						</p>
-
-						<p class="services__description">
-							During therapy sessions, we will explore the unique challenges of your grief journey,
-							including feelings of sadness, anger, guilt, and anxiety. We will also work together to
-							identify healthy coping mechanisms and self-care strategies to help you manage your emotions
-							and maintain your well-being.
-						</p>
-
-						<p class="services__description">
-							My approach to bereavement support is person-centered and tailored to the specific needs and
-							goals of each individual. I understand that everyone's experience of grief is unique, and I
-							will work with you to create a treatment plan that fits your needs.
-						</p>
-
-						<button class="services__toggle">
-							<i class="bx bx-chevron-down-circle chevron-down"></i>
-							<i class="bx bx-chevron-up-circle chevron-up"></i>
+						<div class="services__header">
+							<i class="bx bx-plus-medical services__icon" aria-hidden="true"></i>
+							<h3 class="services__title">Bereavement Support</h3>
+						</div>
+						<div class="services__body">
+							<p class="services__description">
+								If you are struggling with grief and bereavement, please know that you are not alone.
+							</p>
+							<p class="services__description">
+								Losing a loved one is one of the most difficult experiences we can face in life. The process
+								of grief and bereavement can be overwhelming and isolating, and it is important to have
+								support during this time.
+							</p>
+							<p class="services__description">
+								Together, we can work towards healing and finding meaning in the midst of loss. Whether you
+								have experienced recent loss or are still struggling with unresolved grief from the past, I
+								am here to provide a safe and compassionate space to process your emotions and work through
+								your grief.
+							</p>
+							<p class="services__description">
+								During therapy sessions, we will explore the unique challenges of your grief journey,
+								including feelings of sadness, anger, guilt, and anxiety. We will also work together to
+								identify healthy coping mechanisms and self-care strategies to help you manage your emotions
+								and maintain your well-being.
+							</p>
+							<p class="services__description">
+								My approach to bereavement support is person-centered and tailored to the specific needs and
+								goals of each individual. I understand that everyone's experience of grief is unique, and I
+								will work with you to create a treatment plan that fits your needs.
+							</p>
+						</div>
+						<button class="services__toggle" aria-expanded="false" aria-label="Toggle details about bereavement support">
+							<i class="bx bx-chevron-down services__chevron" aria-hidden="true"></i>
 						</button>
 					</div>
 
 					<div class="services__content">
-						<i class="bx bx-shield-quarter services__icon"></i>
-						<h3 class="services__title">What is a Strengths-based Approach?</h3>
-						<p class="services__description">
-							A strengths-based approach is a way of doing therapy that focuses on what you're good at and
-							what you're good at doing, instead of just looking at your weaknesses or problems. The idea
-							is that everyone has things they're good at, and if we focus on those things, we can help
-							you feel better and be more successful.
-						</p>
-						<p class="services__description">
-							When we use a strengths-based approach, we'll work together to figure out what your
-							strengths and skills are, and how we can use them to help you achieve your goals and feel
-							better about yourself. We'll focus on finding solutions and strategies that build on your
-							strengths, rather than just trying to fix your weaknesses.
-						</p>
-						<p class="services__description">
-							This approach can be especially helpful if you're feeling down on yourself or if you've been
-							through some tough times. By focusing on your strengths, we can help you see yourself in a
-							more positive light and feel more hopeful about the future.
-						</p>
-						<p class="services__description">
-							Remember, a strengths-based approach isn't a specific type of therapy, but rather a way of
-							working with you that emphasizes your unique strengths and abilities, and uses those as a
-							foundation for positive change and growth.
-						</p>
-
-						<button class="services__toggle">
-							<i class="bx bx-chevron-down-circle chevron-down"></i>
-							<i class="bx bx-chevron-up-circle chevron-up"></i>
+						<div class="services__header">
+							<i class="bx bx-shield-quarter services__icon" aria-hidden="true"></i>
+							<h3 class="services__title">What is a Strengths-based Approach?</h3>
+						</div>
+						<div class="services__body">
+							<p class="services__description">
+								A strengths-based approach is a way of doing therapy that focuses on what you're good at and
+								what you're good at doing, instead of just looking at your weaknesses or problems. The idea
+								is that everyone has things they're good at, and if we focus on those things, we can help
+								you feel better and be more successful.
+							</p>
+							<p class="services__description">
+								When we use a strengths-based approach, we'll work together to figure out what your
+								strengths and skills are, and how we can use them to help you achieve your goals and feel
+								better about yourself. We'll focus on finding solutions and strategies that build on your
+								strengths, rather than just trying to fix your weaknesses.
+							</p>
+							<p class="services__description">
+								This approach can be especially helpful if you're feeling down on yourself or if you've been
+								through some tough times. By focusing on your strengths, we can help you see yourself in a
+								more positive light and feel more hopeful about the future.
+							</p>
+							<p class="services__description">
+								Remember, a strengths-based approach isn't a specific type of therapy, but rather a way of
+								working with you that emphasizes your unique strengths and abilities, and uses those as a
+								foundation for positive change and growth.
+							</p>
+						</div>
+						<button class="services__toggle" aria-expanded="false" aria-label="Toggle details about strengths-based approach">
+							<i class="bx bx-chevron-down services__chevron" aria-hidden="true"></i>
 						</button>
 					</div>
 				</div>
 			</section>
 
-			<img
-				src="images/nik-destinations.jpg"
-				alt="a small potted plant sitting next to a sign that says difficult roads lead to beautiful destinations."
-				loading="lazy" />
+			<div class="img-section">
+				<img
+					src="images/floral-pastel.webp"
+					alt="Soft pastel floral art in gentle pink, lavender, and green tones"
+					loading="lazy" />
+			</div>
 
 			<!--===== RESOURCES =====-->
-			<section class="resources" id="resources">
-				<div class="resources__container">
+			<section class="resources" id="resources" aria-label="Resources and mission">
+				<div class="resources__container container">
 					<div class="resources__data">
 						<div class="resources__l-group">
 							<h2 class="resources__title">Resources</h2>
@@ -752,33 +780,37 @@
 								and provide guidance to individuals who may be seeking help but are unsure of where to
 								turn.
 							</p>
-							<a href="#contact" target="_self" class="button button__light resources__button">
+							<a href="#contact" class="button button__light resources__button">
 								Contact Me
 							</a>
 						</div>
 
-						<img src="images/howareyoureally-unsplash.jpg" alt="" class="resources__img" />
+						<img
+							src="images/howareyoureally-unsplash.jpg"
+							alt="Neon sign reading: How are you, really?"
+							class="resources__img"
+							loading="lazy" />
 					</div>
 				</div>
 			</section>
 
 			<!--===== LINKS =====-->
-			<section class="links section" id="links">
+			<section class="links section" id="links" aria-label="Helpful resource links">
 				<h2 class="section-title">Links</h2>
 				<div class="links__container grid">
 					<div class="links__group">
-						<div class="links__group-head flex">
-							<a href="https://988lifeline.org/talk-to-someone-now/" class="links__link">
-								<img src="images/988images/988-square-slate.jpg" alt="" class="links__logo" />
+						<div class="links__group-head">
+							<a href="https://988lifeline.org/talk-to-someone-now/" target="_blank" rel="noopener noreferrer" class="links__link">
+								<img src="images/988images/988-square-slate.jpg" alt="988 Suicide and Crisis Lifeline logo" class="links__logo" />
 							</a>
-							<div class="links__info flex">
-								<h2 class="links__title">988</h2>
-								<h3 class="links__subtitle">
+							<div class="links__info">
+								<h3 class="links__title">988</h3>
+								<p class="links__subtitle">
 									Dial
 									<a href="tel:988">988</a>
 									for Mental Health Crisis Support
-								</h3>
-								<a href="https://988lifeline.org/talk-to-someone-now/" class="links__link">
+								</p>
+								<a href="https://988lifeline.org/talk-to-someone-now/" target="_blank" rel="noopener noreferrer" class="links__cta">
 									Get Help Now
 								</a>
 							</div>
@@ -795,14 +827,14 @@
 					</div>
 
 					<div class="links__group">
-						<a href="https://homeless.baltimorecity.gov/get-help-now" class="links__link">
+						<a href="https://homeless.baltimorecity.gov/get-help-now" target="_blank" rel="noopener noreferrer" class="links__link">
 							<img
 								src="images/baltimore_logo_2020.png"
-								alt="the city of baltimore logo"
+								alt="City of Baltimore official logo"
 								class="links__logo" />
 						</a>
-						<h2 class="links__title">Persons Experiencing Homelessness</h2>
-						<h3 class="links__subtitle">Get Help for Homelessness in Baltimore City</h3>
+						<h3 class="links__title">Persons Experiencing Homelessness</h3>
+						<p class="links__subtitle">Get Help for Homelessness in Baltimore City</p>
 
 						<p class="links__description">
 							If you or someone you know is homeless in Baltimore, this website can help you find
@@ -815,14 +847,14 @@
 					</div>
 
 					<div class="links__group">
-						<a href="https://211md.org/" class="links__link">
+						<a href="https://211md.org/" target="_blank" rel="noopener noreferrer" class="links__link">
 							<img
 								src="images/md211.png"
-								alt="a blue and orange speech bubble with the words 211 maryland on it."
+								alt="211 Maryland logo with blue and orange speech bubble"
 								class="links__logo" />
 						</a>
-						<h2 class="links__title">211</h2>
-						<h3 class="links__subtitle">Find Help and Resources</h3>
+						<h3 class="links__title">211</h3>
+						<p class="links__subtitle">Find Help and Resources</p>
 						<p class="links__description">
 							Access the Maryland 211 website to easily find local resources and services for a variety of
 							needs, including healthcare, housing, food assistance, and more. By simply dialing 211 on
@@ -834,18 +866,18 @@
 					</div>
 
 					<div class="links__group">
-						<a href="https://311services.baltimorecity.gov/" class="links__link">
+						<a href="https://311services.baltimorecity.gov/" target="_blank" rel="noopener noreferrer" class="links__link">
 							<img
 								src="images/baltimore311.jpg"
-								alt="logo dor baltimore 311 service"
+								alt="Baltimore 311 service logo"
 								class="links__logo" />
 						</a>
-						<h2 class="links__title">311</h2>
-						<h3 class="links__subtitle">Report Issues and Get Help</h3>
+						<h3 class="links__title">311</h3>
+						<p class="links__subtitle">Report Issues and Get Help</p>
 						<p class="links__description">
 							Call
 							<a href="tel:311">3-1-1</a>
-							, within the City of Baltimore Access the City of Baltimore's 311 service lifeline website
+							within the City of Baltimore. Access the City of Baltimore's 311 service lifeline website
 							to easily report non-emergency issues and receive help from city officials. Whether you're
 							reporting a pothole, requesting trash pickup, or need information on city services, the 311
 							service is available to assist you. The website offers a variety of resources and services,
@@ -856,34 +888,36 @@
 					</div>
 
 					<div class="links__group">
-						<a href="https://www.thehotline.org/" class="links__link links__logo">
-							<img src="images/DOMESTIC_VIOLENCE_HOTLINE_Logo.jpg" alt="" class="links__logo" />
+						<a href="https://www.thehotline.org/" target="_blank" rel="noopener noreferrer" class="links__link">
+							<img src="images/DOMESTIC_VIOLENCE_HOTLINE_Logo.jpg" alt="National Domestic Violence Hotline logo" class="links__logo" />
 						</a>
-						<h2 class="links__title">Domestic Violence Hotline</h2>
-						<h3 class="links__subtitle">Get Help and Support for Domestic Violence</h3>
-						<a href="https://www.thehotline.org/" class="links__link">thehotline.org</a>
-						<br />
-						<a href="https://espanol.thehotline.org/">Línea Directa de Violencia Doméstica</a>
+						<h3 class="links__title">Domestic Violence Hotline</h3>
+						<p class="links__subtitle">Get Help and Support for Domestic Violence</p>
+						<p class="links__link-inline">
+							<a href="https://www.thehotline.org/" target="_blank" rel="noopener noreferrer">thehotline.org</a>
+							&nbsp;|&nbsp;
+							<a href="https://espanol.thehotline.org/" target="_blank" rel="noopener noreferrer">Linea Directa de Violencia Domestica</a>
+						</p>
 						<p class="links__description">
 							Call
-							<a href="tel:+18007997233">1-800-799-7233(SAFE)</a>
+							<a href="tel:+18007997233">1-800-799-7233 (SAFE)</a>
 							or visit The National Domestic Violence Hotline website to find information, resources, and
 							support for individuals experiencing domestic violence. The hotline offers confidential
 							support 24/7, with trained advocates available to provide crisis intervention, safety
 							planning, and referrals to local resources. The website also offers a variety of educational
 							materials, including warning signs of abuse, legal rights, and ways to support loved ones
-							who may be experiencing domestic violence. By visiting Thehotline.org, you can access the
+							who may be experiencing domestic violence. By visiting thehotline.org, you can access the
 							help and support you need to break free from domestic violence and start your journey
 							towards safety and healing.
 						</p>
 					</div>
 
 					<div class="links__group">
-						<a href="https://www.probonocounseling.org/" class="links__link">
-							<img src="images/PBCP-SiteIcon.png" alt="" class="links__logo" />
+						<a href="https://www.probonocounseling.org/" target="_blank" rel="noopener noreferrer" class="links__link">
+							<img src="images/PBCP-SiteIcon.png" alt="Pro Bono Counseling Project logo" class="links__logo" />
 						</a>
-						<h2 class="links__title">Pro Bono Counseling</h2>
-						<h3 class="links__subtitle">Get Free Mental Health Counseling in Maryland</h3>
+						<h3 class="links__title">Pro Bono Counseling</h3>
+						<p class="links__subtitle">Get Free Mental Health Counseling in Maryland</p>
 
 						<p class="links__description">
 							If you or someone you know is experiencing mental health issues but can't afford counseling,
@@ -899,11 +933,11 @@
 					</div>
 
 					<div class="links__group">
-						<a href="https://www.mdlab.org/" class="links__link">
-							<img src="images/maryland-legal-aid-logo-Color.png" alt="" />
+						<a href="https://www.mdlab.org/" target="_blank" rel="noopener noreferrer" class="links__link">
+							<img src="images/maryland-legal-aid-logo-Color.png" alt="Maryland Legal Aid logo" class="links__logo" />
 						</a>
-						<h2 class="links__title">Maryland Legal Aid</h2>
-						<h3 class="links__subtitle">Free legal services to those in need</h3>
+						<h3 class="links__title">Maryland Legal Aid</h3>
+						<p class="links__subtitle">Free legal services to those in need</p>
 						<p class="links__description">
 							If you or someone you know needs legal assistance in Maryland, Maryland Legal Aid can help.
 							The organization provides free legal services to low-income Maryland residents on a range of
@@ -914,11 +948,11 @@
 					</div>
 
 					<div class="links__group">
-						<a href="https://www.marylandhealthconnection.gov/" class="links__link">
-							<img src="images/mhc_h_400-3.png" alt="" />
+						<a href="https://www.marylandhealthconnection.gov/" target="_blank" rel="noopener noreferrer" class="links__link">
+							<img src="images/mhc_h_400-3.png" alt="Maryland Health Connection logo" class="links__logo" />
 						</a>
-						<h2 class="links__title">MHC</h2>
-						<h3 class="links__subtitle">Get Health Insurance Coverage</h3>
+						<h3 class="links__title">MHC</h3>
+						<p class="links__subtitle">Get Health Insurance Coverage</p>
 						<p class="links__description">
 							Maryland Health Connection is the state's official health insurance marketplace, offering
 							individuals, families, and small businesses a range of affordable health insurance options.
@@ -931,11 +965,11 @@
 					</div>
 
 					<div class="links__group">
-						<a href="https://www.samhsa.gov/find-help/national-helpline" class="links__link">
-							<img src="images/samsa_png_270_kb.png" alt="" />
+						<a href="https://www.samhsa.gov/find-help/national-helpline" target="_blank" rel="noopener noreferrer" class="links__link">
+							<img src="images/samsa_png_270_kb.png" alt="SAMHSA logo" class="links__logo" />
 						</a>
-						<h2 class="links__title">SAMHSA</h2>
-						<h3 class="links__subtitle">Confidential Treatment Referral</h3>
+						<h3 class="links__title">SAMHSA</h3>
+						<p class="links__subtitle">Confidential Treatment Referral</p>
 						<p class="links__description">
 							The Substance Abuse and Mental Health Services Administration (SAMHSA) provides a free and
 							confidential helpline that offers support and information for individuals and families
@@ -948,59 +982,29 @@
 				</div>
 			</section>
 
-			<div class="right__call">
-				<img src="images/911.211.311_English.png" alt="" loading="lazy" />
-			</div>
+			<div class="supplemental-resources container">
+				<div class="right__call">
+					<img src="images/911.211.311_English.png" alt="Infographic explaining when to call 911, 211, and 311" loading="lazy" />
+				</div>
 
-			<div class="module">
-				<img
-					id="HotlineMap"
-					src="https://humantraffickinghotline.org/sites/default/files/2023-01/hotline-widget-big.png"
-					usemap="#ModuleMap"
-					alt="National Human Trafficking Hotline"
-					height="180"
-					width="275" />
-				<map name="ModuleMap" id="ModuleMap">
-					<area
-						shape="rect"
-						coords="0,0,255,43"
-						href="https://www.humantraffickinghotline.org/"
-						alt="National Human Trafficking hotline"
-						title="National Human Trafficking Hotline" />
-
-					<area
-						shape="rect"
-						coords="8,100,82,169"
-						href="https://www.humantraffickinghotline.org/get-help"
-						alt="Get Help"
-						title="Get Help" />
-
-					<area
-						shape="rect"
-						coords="83,100,157,169"
-						href="https://www.humantraffickinghotline.org/report-trafficking"
-						alt="Report Human Trafficking"
-						title="Report Human Trafficking" />
-
-					<area
-						shape="rect"
-						coords="158,100,249,169"
-						href="https://www.humantraffickinghotline.org/resources"
-						alt="Human Trafficking Information &amp;amp; Resources"
-						title="Human Trafficking Information &amp;amp; Resources" />
-				</map>
+				<div class="module">
+					<a href="https://www.humantraffickinghotline.org/" target="_blank" rel="noopener noreferrer">
+						<img
+							src="https://humantraffickinghotline.org/sites/default/files/2023-01/hotline-widget-big.png"
+							alt="National Human Trafficking Hotline - Call 1-888-373-7888"
+							loading="lazy" />
+					</a>
+				</div>
 			</div>
 		</main>
 
 		<!--===== FOOTER =====-->
-		<footer class="footer">
-			<div class="footer__container">
-				<!--===== CONTACT =====-->
-				<section class="contact section" id="contact">
-					<div class="contact__description">
-						<h2 class="contact__title">Contact Me</h2>
-
-						<p class="contact__text">
+		<footer class="footer" id="contact">
+			<div class="footer__top">
+				<div class="footer__container container">
+					<div class="footer__col footer__col--contact">
+						<h2 class="footer__title">Contact Me</h2>
+						<p class="footer__text">
 							I am currently accepting new clients for both in-person and virtual therapy sessions. If you
 							are interested in scheduling an appointment or have any questions about my therapy services,
 							please don't hesitate to contact me. I look forward to hearing from you and
@@ -1008,54 +1012,51 @@
 						</p>
 					</div>
 
-					<div class="contact__info flex">
-						<div class="contact__group">
-							<h3 class="contact__subtitle">Phone</h3>
-							<a href="tel:+14108880847" class="contact__link">(410) 888-0847</a>
-						</div>
+					<div class="footer__col footer__col--info">
+						<h3 class="footer__heading">Phone</h3>
+						<a href="tel:+14108880847" class="footer__link" aria-label="Call (410) 888-0847">(410) 888-0847</a>
 
-						<div class="contact__group">
-							<h3 class="contact__subtitle">Email</h3>
-							<a href="mailto:saltenor@protonmail.com" class="contact__link">saltenor@protonmail.com</a>
-						</div>
+						<h3 class="footer__heading">Email</h3>
+						<a href="mailto:saltenor@protonmail.com" class="footer__link" aria-label="Email saltenor@protonmail.com">saltenor@protonmail.com</a>
 
-						<div class="contact__group">
-							<h3 class="contact__subtitle">Location</h3>
-							<ul class="contact__list">
-								<li class="contact__item">Baltimore</li>
-								<li class="contact__item">Roland Park</li>
-								<li class="contact__item">Towson</li>
-							</ul>
-						</div>
+						<h3 class="footer__heading">Location</h3>
+						<ul class="footer__list">
+							<li>Baltimore</li>
+							<li>Roland Park</li>
+							<li>Towson</li>
+						</ul>
 					</div>
 
-					</section>
-
-					<div class="footer__social">
-					<a href="https://www.linkedin.com/in/savanna-altenor-508136238/" class="footer__link">
-						<i class="bx bxl-linkedin-square footer__icon"></i>
-					</a>
+					<div class="footer__col footer__col--connect">
+						<h3 class="footer__heading">Connect</h3>
+						<div class="footer__social">
+							<a
+								href="https://www.linkedin.com/in/savanna-altenor-508136238/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="footer__social-link"
+								aria-label="LinkedIn profile">
+								<i class="bx bxl-linkedin-square" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 
-			<div class="badge">
-				<a href="https://www.psychologytoday.com/profile/1571952" class="sx-verified-seal"></a>
-
-				<script
-					src="https://member.psychologytoday.com/verified-seal.js"
-					data-badge="17"
-					data-id="1571952"
-					data-code="aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy9bQkFER0VdL3Byb2ZpbGUvW1BST0ZJTEVfSURdP2NhbGxiYWNrPXN4Y2FsbGJhY2s="></script>
+			<div class="footer__bottom">
+				<div class="container">
+					<p class="footer__copy">
+						&copy; <span id="copyright-year"></span> Savanna Altenor. All Rights Reserved.
+						<span class="footer__separator">|</span>
+						<a href="https://nickpoole.dev" target="_blank" rel="noopener noreferrer" class="footer__webmaster">Webmaster</a>
+					</p>
+				</div>
 			</div>
 
-			<div>
-				<p class="footer__copy">All Rights Reserved &commat; <span id="copyright-year"></span></p>
-		<script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
-			</div>
+			<script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
 		</footer>
 
 		<!--===== MAIN JS =====-->
 		<script src="js/main.js"></script>
-
 	</body>
 </html>

@@ -1,41 +1,53 @@
-/*===== MENU SHOW Y HIDDEN =====*/
+/*===== MENU SHOW & HIDDEN =====*/
 const navMenu = document.getElementById("nav-menu");
-const toggleMenu = document.getElementById("nav-toggle");
-const closeMenu = document.getElementById("nav-close");
+const navToggle = document.getElementById("nav-toggle");
+const navClose = document.getElementById("nav-close");
+const navOverlay = document.getElementById("nav-overlay");
 
-// SHOW
-toggleMenu.addEventListener("click", () => {
-    navMenu.classList.toggle("show");
-});
-
-// HIDDEN
-closeMenu.addEventListener("click", () => {
-    navMenu.classList.remove("show");
-});
-
-/*===== ACTIVE AND REMOVE MENU =====*/
-const navLink = document.querySelectorAll(".nav__link");
-
-function linkAction() {
-    navMenu.classList.remove("show");
+function openMenu() {
+    navMenu.classList.add("show");
+    navOverlay.classList.add("show");
+    navToggle.setAttribute("aria-expanded", "true");
+    document.body.style.overflow = "hidden";
 }
 
-navLink.forEach((n) => n.addEventListener("click", linkAction));
+function closeMenu() {
+    navMenu.classList.remove("show");
+    navOverlay.classList.remove("show");
+    navToggle.setAttribute("aria-expanded", "false");
+    document.body.style.overflow = "";
+}
+
+navToggle.addEventListener("click", openMenu);
+navClose.addEventListener("click", closeMenu);
+navOverlay.addEventListener("click", closeMenu);
+
+// Close menu on Escape key
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && navMenu.classList.contains("show")) {
+        closeMenu();
+        navToggle.focus();
+    }
+});
+
+/*===== CLOSE MENU ON NAV LINK CLICK =====*/
+const navLinks = document.querySelectorAll(".nav__link");
+navLinks.forEach((link) => link.addEventListener("click", closeMenu));
 
 /*====== SCROLL SECTIONS ACTIVE LINK ======*/
 document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".nav__list a");
+    const sections = document.querySelectorAll("section[id]");
+    const allNavLinks = document.querySelectorAll(".nav__list a");
 
     window.addEventListener("scroll", () => {
         const currentScroll = window.scrollY;
 
         sections.forEach((section) => {
-            const sectionTop = section.offsetTop - 50;
+            const sectionTop = section.offsetTop - 100;
             const sectionHeight = section.offsetHeight;
             const sectionId = section.getAttribute("id");
 
-            navLinks.forEach((link) => {
+            allNavLinks.forEach((link) => {
                 if (link.getAttribute("href") === `#${sectionId}`) {
                     if (currentScroll >= sectionTop && currentScroll < sectionTop + sectionHeight) {
                         link.classList.add("active");
@@ -48,11 +60,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// =============== active-Service onClick ========== */
+/*===== SERVICES ACCORDION TOGGLE =====*/
 const toggles = document.querySelectorAll(".services__toggle");
 
 toggles.forEach((toggle) => {
     toggle.addEventListener("click", () => {
-        toggle.parentNode.classList.toggle("active-service");
+        const parent = toggle.closest(".services__content");
+        const isActive = parent.classList.contains("active-service");
+
+        parent.classList.toggle("active-service");
+        toggle.setAttribute("aria-expanded", isActive ? "false" : "true");
     });
 });
